@@ -1,9 +1,16 @@
 import React from 'react';
 
-const Layout =  (props) => (
-  <div>
-    Layout
-  </div>
-)
+import Navbar from './Navbar';
+import Footer from './Footer';
+
+function Layout (props) {
+    return (
+      <React.Fragment>
+        <Navbar />
+        { props.children }
+        <Footer />
+      </React.Fragment>
+    );
+}
 
 export default Layout;

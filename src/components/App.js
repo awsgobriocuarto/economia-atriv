@@ -1,27 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Navbar from './Navbar';
-import Home from './Home';
-import Tanks from './Tanks';
-import Page404 from './Page404';
-import '../scss/styles.scss';
+import Layout from './Layout';
+
+import Home from '../containers/Home';
+import Tanks from '../containers/Tanks';
+import Page404 from '../containers/Page404';
+
+import '../assets/scss/styles.scss';
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/gracias">
-          <Tanks />
-        </Route>
-        <Route path="*">
-          <Page404 />
-        </Route>
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/gracias" component={Tanks} />
+          <Route path="*" component={Page404} />
+        </Switch>
+      </Layout>
     </Router>
   );
 }

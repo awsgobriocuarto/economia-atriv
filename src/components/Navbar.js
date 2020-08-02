@@ -18,8 +18,8 @@ const Navbar =  (props) => (
             <Link to="/" className="nav-link">
               <FontAwesomeIcon 
                 icon={faHome}
-              />
-              Home
+                className="mr-1"
+              />Home
             </Link>
           </li>
           <li className="nav-item">
