@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import logoAtriv from '../assets/statics/administracion-tributaria-isologo.svg';
 
-const Navbar =  (props) => (
-  <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
+
+const Navbar =  () => (
+  <nav className="navbar navbar-expand-md navbar-light bg-light mb-5">
     <div className="container">
-      <Link className="navbar-brand" to="/">Navbar</Link>
+      <Link className="navbar-brand" to="/">
+        <img src={logoAtriv} alt="atriv"/>
+      </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -17,30 +20,41 @@ const Navbar =  (props) => (
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <Link to="/" className="nav-link">
-             Home
+             Inicio
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/gracias" className="nav-link">Gracias</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/404" className="nav-link">404</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/404" className="nav-link">
-              <FontAwesomeIcon 
-                icon={faHome}
-                className="mr-1"
-              />
+            <Link to="/deudas-y-pagos" className="nav-link">
+             Deudas y Pagos
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/404" className="nav-link">
+            <Link to="/deudas-y-pagos" className="nav-link">
+             Servicios
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/deudas-y-pagos" className="nav-link">
+             Contacto
+            </Link>
+          </li>
+          <li className="nav-item">
+            <a href="https://google.com" className="nav-link" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon 
                 icon={faFacebook}
                 className="mr-1"
               />
-            </Link>
+              <span className="ml-1 d-sm-none">Facebook</span>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="https://google.com" className="nav-link" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon 
+                icon={faInstagram}
+                className="mr-1"
+              />
+              <span className="ml-1 d-sm-none">Instagram</span>
+            </a>
           </li>
         </ul>
       </div>

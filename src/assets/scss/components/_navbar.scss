@@ -1,3 +1,20 @@
 .navbar{
   padding: 20px;
+
+  .navbar-brand{
+    // background-color: orange;
+    img{
+      height: 68px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar{
+    .navbar-brand{
+      img{
+        height: 50px;
+      }
+    }
+  }
 }
