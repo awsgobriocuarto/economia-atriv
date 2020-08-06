@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 const Navbar =  (props) => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
@@ -16,10 +17,7 @@ const Navbar =  (props) => (
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <Link to="/" className="nav-link">
-              <FontAwesomeIcon 
-                icon={faHome}
-                className="mr-1"
-              />Home
+             Home
             </Link>
           </li>
           <li className="nav-item">
@@ -27,6 +25,22 @@ const Navbar =  (props) => (
           </li>
           <li className="nav-item">
             <Link to="/404" className="nav-link">404</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/404" className="nav-link">
+              <FontAwesomeIcon 
+                icon={faHome}
+                className="mr-1"
+              />
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/404" className="nav-link">
+              <FontAwesomeIcon 
+                icon={faFacebook}
+                className="mr-1"
+              />
+            </Link>
           </li>
         </ul>
       </div>
