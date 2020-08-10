@@ -47,10 +47,6 @@ class Home extends Component {
                       <a href="/"><h6>Lorem ipsum dolor sit amet consectetur.</h6></a>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </article>
-                    <article>
-                      <a href="/"><h6>Lorem ipsum dolor sit amet consectetur.</h6></a>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </article>
                   </div>
                 </div>
               </div>
