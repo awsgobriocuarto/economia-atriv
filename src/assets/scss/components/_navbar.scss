@@ -1,6 +1,7 @@
 .navbar{
   padding: 20px;
-
+  margin-bottom: 0;
+  
   .navbar-brand{
     // background-color: orange;
     img{
@@ -11,9 +12,10 @@
 
 @media (max-width: 767px) {
   .navbar{
+    padding: 16px 20px;
     .navbar-brand{
       img{
-        height: 50px;
+        height: 60px;
       }
     }
   }

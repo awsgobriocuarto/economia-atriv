@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hero =  (props) => (
-  <div>
+  <div className="hero">
     Hero
   </div>
 )

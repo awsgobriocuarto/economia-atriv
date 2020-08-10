@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
 const Navbar =  () => (
-  <nav className="navbar navbar-expand-md navbar-light bg-light mb-5">
+  <nav className="navbar navbar-expand-md navbar-light bg-light">
     <div className="container">
       <Link className="navbar-brand" to="/">
         <img src={logoAtriv} alt="atriv"/>
@@ -29,7 +29,7 @@ const Navbar =  () => (
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/deudas-y-pagos" className="nav-link">
+            <Link to="/servicios" className="nav-link">
              Servicios
             </Link>
           </li>

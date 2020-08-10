@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Layout from './Layout';
+import Layout from '../components/Layout';
 
 import Home from '../containers/Home';
-import Tanks from '../containers/Tanks';
-import Page404 from '../containers/Page404';
+import DeudasPagos from '../containers/DeudasPagos';
+import Servicios from '../containers/Servicios';
+import NotFound from '../containers/NotFound';
 
 import '../assets/scss/styles.scss';
 
@@ -15,8 +16,9 @@ function App() {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/gracias" component={Tanks} />
-          <Route path="*" component={Page404} />
+          <Route exact path="/deudas-y-pagos" component={DeudasPagos} />
+          <Route exact path="/servicios" component={Servicios} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </Layout>
     </Router>

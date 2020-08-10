@@ -1,0 +1,22 @@
+.headline{
+  background-color: $gray-200;
+  margin-bottom: 30px;
+  
+  .container{
+    height: 160px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3{
+      color: $primary;
+    }
+    .icon{
+      img{
+        height: 100px;
+        opacity: 0.4;
+      }
+    }
+  }
+}
