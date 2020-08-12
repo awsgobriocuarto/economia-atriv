@@ -20,3 +20,18 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .headline{
+    margin-bottom: 20px;    
+    .container{
+      height: 80px;  
+      h3{
+        font-size: 1.6em;
+      }
+      .icon{
+        display: none;
+      }
+    }
+  }  
+}

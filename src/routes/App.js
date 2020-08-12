@@ -7,6 +7,7 @@ import Home from '../containers/Home';
 import DeudasPagos from '../containers/DeudasPagos';
 import Servicios from '../containers/Servicios';
 import NotFound from '../containers/NotFound';
+import Novedades from '../containers/Novedades';
 
 import '../assets/scss/styles.scss';
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/deudas-y-pagos" component={DeudasPagos} />
           <Route exact path="/servicios" component={Servicios} />
+          <Route exact path="/novedades/:slug" component={Novedades} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Layout>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Hero from '../components/Hero';
 import { Link } from 'react-router-dom';
+import NovedadesList from '../components/NovedadesList';
 
 import deudasPagosIcon from '../assets/statics/deudas-y-pagos.svg';
 import serviciosIcon from '../assets/statics/mas-servicios.svg';
@@ -30,25 +31,7 @@ class Home extends Component {
                 </Link>
               </div>
               <div className="col-md-6">
-                <div className="card card-home">
-                  <div className="card-header">
-                    Novedades
-                  </div>
-                  <div className="card-body">
-                    <article>
-                      <a href="/"><h6>Lorem ipsum dolor sit amet consectetur.</h6></a>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </article>
-                    <article>
-                      <a href="/"><h6>Lorem ipsum dolor sit amet consectetur.</h6></a>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </article>
-                    <article>
-                      <a href="/"><h6>Lorem ipsum dolor sit amet consectetur.</h6></a>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </article>
-                  </div>
-                </div>
+                <NovedadesList />
               </div>
             </div>
           </div>

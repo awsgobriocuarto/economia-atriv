@@ -1,13 +1,14 @@
 import React from 'react';
 import Headline from '../components/Headline';
+import ServiciosList from '../components/ServiciosList';
 
-const Servicios =  (props) => (
-  <>
-  <Headline title="Más Servicios" icon="" />
-  <div className="container">
-    Servicios
-  </div>
-  </>
-)
+function Servicios() {
+  return (
+    <>
+      <Headline title="Más Servicios" icon="" />
+      <ServiciosList />
+    </>
+  )
+}
 
 export default Servicios;

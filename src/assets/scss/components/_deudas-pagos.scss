@@ -24,7 +24,7 @@
 
         display: flex;
         align-items: center;
-        justify-content: center;      
+        justify-content: center;
       }
     }
     .list-group{
@@ -35,6 +35,7 @@
       border: 0px;
       margin-bottom: 8px;
       background-color: transparent;
+      font-weight: 400;
       a{
         border-radius: 4px;
         padding: 4px 8px;
@@ -42,7 +43,7 @@
         text-decoration: none;
         background-color: rgba($secondary, 0.16);
         &:hover{
-          background-color: rgba($secondary, 0.36);
+          background-color: rgba($secondary, 0.28);
         }
       }
     }
