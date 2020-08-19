@@ -1,19 +1,19 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
 
-import Home from '../containers/Home';
-import DeudasPagos from '../containers/DeudasPagos';
-import Servicios from '../containers/Servicios';
-import NotFound from '../containers/NotFound';
-import Novedades from '../containers/Novedades';
-import Legislacion from '../containers/Legislacion';
-import MediosDePago from '../containers/MediosDePagos';
-import Contacto from '../containers/Contacto';
-import Tutoriales from '../containers/Tutoriales';
+import Home from "../containers/Home";
+import DeudasPagos from "../containers/DeudasPagos";
+import Servicios from "../containers/Servicios";
+import NotFound from "../containers/NotFound";
+import Novedades from "../containers/Novedades";
+import Legislacion from "../containers/Legislacion";
+import MediosDePago from "../containers/MediosDePagos";
+import Contacto from "../containers/Contacto";
+import Tutoriales from "../containers/Tutoriales";
 
-import '../assets/scss/styles.scss';
+import "../assets/scss/styles.scss";
 
 function App() {
   return (

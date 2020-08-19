@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Headline from '../components/Headline';
-import ButtonBack from '../components/ButtonBack';
+import React, { Component } from "react";
+import Headline from "../components/Headline";
+import ButtonBack from "../components/ButtonBack";
 
 class Contacto extends Component {
-  render () {
+  render() {
     return (
       <>
         <Headline title="Servicios" icon="" />
@@ -14,7 +14,7 @@ class Contacto extends Component {
           </div>
         </div>
       </>
-    )
+    );
   }
 }
 

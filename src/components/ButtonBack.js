@@ -1,13 +1,13 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React from "react";
+import { useHistory } from "react-router-dom";
 
-function ButtonBack (props) {
-  let history = useHistory()
+function ButtonBack(props) {
+  let history = useHistory();
   return (
     <div className="button-goBack">
       <div className="container">
-        <button 
-          type="button" 
+        <button
+          type="button"
           onClick={() => history.goBack()}
           className="btn btn-primary"
         >
@@ -15,7 +15,7 @@ function ButtonBack (props) {
         </button>
       </div>
     </div>
-  )
+  );
 }
 
 export default ButtonBack;
