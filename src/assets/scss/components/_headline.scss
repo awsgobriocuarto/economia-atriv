@@ -1,19 +1,19 @@
-.headline{
-  background-color: $gray-200;
-  margin-bottom: 30px;
-  
-  .container{
+.headline {
+  background-color: rgba($secondary, 0.2);
+  margin-bottom: 50px;
+
+  .container {
     height: 160px;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    h3{
+    h3 {
       color: $primary;
     }
-    .icon{
-      img{
+    .icon {
+      img {
         height: 100px;
         opacity: 0.4;
       }
@@ -22,16 +22,16 @@
 }
 
 @media (max-width: 767px) {
-  .headline{
-    margin-bottom: 20px;    
-    .container{
-      height: 80px;  
-      h3{
+  .headline {
+    margin-bottom: 30px;
+    .container {
+      height: 80px;
+      h3 {
         font-size: 1.6em;
       }
-      .icon{
+      .icon {
         display: none;
       }
     }
-  }  
+  }
 }

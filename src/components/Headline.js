@@ -1,23 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import deudasPagosIcon from '../assets/statics/deudas-y-pagos.svg';
-import serviciosIcon from '../assets/statics/mas-servicios.svg';
+import ButtonBack from "./ButtonBack";
 
-const Headline =  (props) => {
+const Headline = (props) => {
+  const { title } = props;
 
-  const { title, icon } = props;
-  
-  return(  
+  return (
     <div className="headline">
       <div className="container">
-        <h3>{title ? title : 'Atriv'}</h3>
-        <div className="icon">
-          <img src={icon ? deudasPagosIcon : serviciosIcon}  alt=""/>
-        </div>
+        <h3>{title ? title : "Atriv"}</h3>
+        <ButtonBack />
       </div>
     </div>
-  )
-
-}
+  );
+};
 
 export default Headline;

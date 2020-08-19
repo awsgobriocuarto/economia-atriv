@@ -9,7 +9,7 @@ function ButtonBack(props) {
         <button
           type="button"
           onClick={() => history.goBack()}
-          className="btn btn-primary"
+          className="btn btn-sm btn-outline-primary"
         >
           Volver
         </button>

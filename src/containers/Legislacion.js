@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
-import Headline from '../components/Headline';
-import ButtonBack from '../components/ButtonBack';
+import React, { Component } from "react";
+import Headline from "../components/Headline";
 
 class Legislacion extends Component {
-  render () {
+  render() {
     return (
       <>
         <Headline title="Servicios" icon="" />
-        <ButtonBack />
         <div className="legislacion">
           <div className="container">
-            <h5>Legislacion</h5>
+            <h4>Legislacion</h4>
           </div>
         </div>
       </>
-    )
+    );
   }
 }
 

@@ -1,15 +1,17 @@
-@import './custom';
-@import '~bootstrap';
+@import "./custom";
+@import "~bootstrap";
 
-@import './components/base';
-@import './components/typography';
-@import './components/navbar';
-@import './components/hero';
-@import './components/headline';
-@import './components/footer';
+@import "./components/base";
+@import "./components/typography";
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/headline";
+@import "./components/footer";
 
-@import './components/home';
-@import './components/deudas-pagos';
-@import './components/services';
-@import './components/calendar';
-@import './components/buttons';
+@import "./components/home";
+@import "./components/deudas-pagos";
+@import "./components/services";
+@import "./components/medios-pagos";
+@import "./components/calendar";
+@import "./components/cta";
+@import "./components/buttons";

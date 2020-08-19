@@ -1,6 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700;800&display=swap");
 
-$font-family-sans-serif: 'Fira Sans', sans-serif;
+$font-family-sans-serif: "Fira Sans", sans-serif;
 
-$primary: #1C3345;
-$secondary: #86BAE3;
+$primary: #1c3345;
+$secondary: #86bae3;
+$cta: #349e14;
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+  (
+    "cta": $cta,
+  ),
+  $theme-colors
+);

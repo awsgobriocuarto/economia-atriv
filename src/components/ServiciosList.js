@@ -1,53 +1,60 @@
-import React from 'react';
+import React from "react";
 // import { Link } from 'react-router-dom';
-import ServiciosItem from '../components/ServiciosItem';
+import ServiciosItem from "../components/ServiciosItem";
 
 const services = [
   {
     id: 1,
-    title: 'legislacion',
-    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.',
-    icon: 'faBriefcase',
-    url: '/legislacion',
+    title: "legislacion",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+    icon: "faBriefcase",
+    url: "/legislacion",
   },
   {
     id: 2,
-    title: 'tutoriales',
-    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.',
-    icon: 'faAtlas',
-    url: '/tutoriales',
+    title: "medios de pago",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+    icon: "faCreditCard",
+    url: "/medios-de-pago",
   },
   {
     id: 3,
-    title: 'medios de pago',
-    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.',
-    icon: 'faCreditCard',
-    url: '/medios-de-pago',
+    title: "consultas",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+    icon: "faEnvelope",
+    url: "/contacto",
   },
   {
     id: 4,
-    title: 'guía de trámites',
-    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.',
-    icon: 'faEdit',
-    url: 'http://tramites.riocuarto.gov.ar/',
-    external: true,
+    title: "tutoriales",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+    icon: "faAtlas",
+    url: "/tutoriales",
   },
   {
     id: 5,
-    title: 'consultas',
-    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.',
-    icon: 'faEnvelope',
-    url: '/contacto',
+    title: "guía de trámites",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+    icon: "faEdit",
+    url: "http://tramites.riocuarto.gov.ar/",
+    external: true,
   },
   {
     id: 6,
-    title: 'cedulón digital',
-    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.',
-    icon: 'faEnvelope',
-    url: 'http://cidi.riocuarto.gov.ar/?cidi=5575683555726C625A66587A6172664676544642464D58696A7A733D',
+    title: "cedulón digital",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+    icon: "faEnvelope",
+    url:
+      "http://cidi.riocuarto.gov.ar/?cidi=5575683555726C625A66587A6172664676544642464D58696A7A733D",
     external: true,
   },
-]
+];
 
 export default function ServiciosList() {
   return (
@@ -60,5 +67,5 @@ export default function ServiciosList() {
         </div>
       </div>
     </div>
-  )
+  );
 }

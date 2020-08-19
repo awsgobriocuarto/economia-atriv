@@ -3,26 +3,31 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-weight: 500;
   margin-bottom: 0px;
 }
 
-h1{
+h1 {
   font-size: 3em;
 }
-h2{
+h2 {
   font-size: 2.6em;
 }
-h3{
+h3 {
   font-size: 2.2em;
 }
-h4{
-  font-size: 1.8em;  
+h4 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: $secondary;
 }
-h5{
+h5 {
   font-size: 1.5em;
+  margin-bottom: 20px;
 }
-h6{
+h6 {
   font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 20px;
 }

@@ -1,0 +1,50 @@
+.medios-pagos {
+  //background-color: orange;
+
+  .medios-pagos-group {
+    margin-bottom: 20px;
+    .logo {
+      height: 100px;
+      margin-bottom: 30px;
+      border: 1px solid $gray-300;
+      background-color: $gray-200;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .medios-pagos-cta {
+    margin-bottom: 40px;
+    .help {
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .medios-pagos {
+    .medios-pagos-group {
+      margin-bottom: 20px;
+      .logo {
+        height: 100px;
+        margin-bottom: 30px;
+        border: 1px solid $gray-300;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .medios-pagos-cta {
+      text-align: center;
+      margin-bottom: 40px;
+      .btn {
+        margin-bottom: 16px;
+      }
+      .help {
+        text-align: center;
+      }
+    }
+  }
+}
