@@ -18,6 +18,9 @@
     margin-bottom: 40px;
     .help {
       text-align: right;
+      a {
+        color: $secondary;
+      }
     }
   }
 }
