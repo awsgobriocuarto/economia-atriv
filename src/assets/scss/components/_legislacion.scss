@@ -1,0 +1,40 @@
+.legislacion {
+  .nav {
+    .nav-link {
+      background-color: white;
+      border: 1px solid $primary;
+      margin-bottom: 8px;
+      padding: 16px;
+
+      &.active {
+        background-color: $primary;
+        .icon {
+          color: $primary;
+        }
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .icon {
+        background-color: $gray-200;
+        padding: 6px 5px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .tab-content {
+    //background-color: blue;
+  }
+}
+
+@media (max-width: 767px) {
+  .legislacion {
+    .nav {
+      margin-bottom: 30px;
+    }
+    .tab-content {
+    }
+  }
+}

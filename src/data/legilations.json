@@ -1,0 +1,63 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "C.T.M y Modificaciones",
+      "active": "active",
+      "show": "show",
+      "files": [
+        {
+          "id": 1,
+          "filename": "C.T.M. Modificaciones 2020",
+          "path": "http://www.google.com"
+        },
+        {
+          "id": 2,
+          "filename": "C.T.M. Modificaciones 2019",
+          "path": "http://www.google.com"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Ordenanza Tarifaria Anual",
+      "active": "",
+      "show": "",
+      "files": [
+        {
+          "id": 1,
+          "filename": "O.T.A 2020",
+          "path": "http://www.google.com"
+        },
+        {
+          "id": 2,
+          "filename": "O.T.A 2019",
+          "path": "http://www.google.com"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Decretos Reglamentarios",
+      "active": "",
+      "show": "",
+      "files": [
+        {
+          "id": 1,
+          "filename": "D.R 2020",
+          "path": "http://www.google.com"
+        },
+        {
+          "id": 2,
+          "filename": "D.R. 2019",
+          "path": "http://www.google.com"
+        },
+        {
+          "id": 3,
+          "filename": "D.R. 2018",
+          "path": "http://www.google.com"
+        }
+      ]
+    }
+  ]
+}
