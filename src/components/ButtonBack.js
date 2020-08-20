@@ -1,18 +1,22 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 function ButtonBack(props) {
-  let history = useHistory();
+  // let history = useHistory();
+  const path = props.path;
   return (
     <div className="button-goBack">
       <div className="container">
-        <button
+        {/* <button
           type="button"
           onClick={() => history.goBack()}
           className="btn btn-sm btn-outline-primary"
         >
           Volver
-        </button>
+        </button> */}
+        <a href={path ? path : "/"} className="btn btn-sm btn-outline-primary">
+          Volver
+        </a>
       </div>
     </div>
   );

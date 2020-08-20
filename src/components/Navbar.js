@@ -41,7 +41,7 @@ const Navbar = () => (
             </a>
           </li>
           <li className="nav-item">
-            <a href="/deudas-y-pagos" className="nav-link">
+            <a href="/contacto" className="nav-link">
               Contacto
             </a>
           </li>

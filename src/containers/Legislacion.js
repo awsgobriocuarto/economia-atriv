@@ -5,7 +5,7 @@ class Legislacion extends Component {
   render() {
     return (
       <>
-        <Headline title="Servicios" icon="" />
+        <Headline title="Servicios" pathGoBack="/servicios" />
         <div className="legislacion">
           <div className="container">
             <h4>Legislacion</h4>

@@ -6,7 +6,7 @@ import CalendarioList from "../components/CalendarioList";
 function Servicios() {
   return (
     <>
-      <Headline title="Servicios" icon="" />
+      <Headline title="Servicios" pathGoBack="/" />
       <ServiciosList />
       <CalendarioList />
     </>

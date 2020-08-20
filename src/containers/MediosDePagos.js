@@ -24,7 +24,7 @@ class MediosDePago extends Component {
   render() {
     return (
       <>
-        <Headline title="Servicios" icon="" />
+        <Headline title="Servicios" pathGoBack="/servicios" />
         <div className="medios-pagos">
           <div className="container">
             <h4>Medios De Pago</h4>

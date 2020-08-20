@@ -5,7 +5,7 @@ class Tutoriales extends Component {
   render() {
     return (
       <>
-        <Headline title="Servicios" icon="" />
+        <Headline title="Servicios" pathGoBack="/servicios" />
         <div className="tutoriales">
           <div className="container">
             <h4>Tutoriales</h4>

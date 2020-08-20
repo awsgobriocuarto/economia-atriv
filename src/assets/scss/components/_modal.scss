@@ -1,4 +1,10 @@
 .modal {
   background-color: rgba(#000, 0.7);
   display: block;
+
+  .close {
+    //background-color: $secondary;
+    font-size: 3em;
+    padding: 8px 16px;
+  }
 }

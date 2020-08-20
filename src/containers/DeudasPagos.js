@@ -9,7 +9,7 @@ import DeudasPagosCementerio from "../components/DeudasPagosCementerio";
 
 const DeudasPagos = (props) => (
   <>
-    <Headline title="Deudas y Pagos" icon="icon" />
+    <Headline title="Deudas y Pagos" pathGoBack="/" />
     <div className="deudas-pagos">
       <div className="container">
         <div className="row">
