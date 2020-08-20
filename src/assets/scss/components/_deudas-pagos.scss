@@ -1,22 +1,22 @@
-.deudas-pagos{
-  .card{
+.deudas-pagos {
+  .card {
     padding: 0;
-    height: 200px;
+    // height: 220px;
     margin-bottom: 30px;
-    .card-header{
+    .card-header {
       padding: 12px;
       background: white;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      .card-header-title{
+      .card-header-title {
         font-weight: 700;
         text-transform: uppercase;
         font-size: 0.96em;
       }
 
-      .card-header-icon{
+      .card-header-icon {
         background-color: $gray-200;
         height: 36px;
         width: 36px;
@@ -27,22 +27,22 @@
         justify-content: center;
       }
     }
-    .list-group{
+    .list-group {
       padding: 12px;
     }
-    .list-group-item{
+    .list-group-item {
       padding: 0;
       border: 0px;
       margin-bottom: 8px;
       background-color: transparent;
       font-weight: 400;
-      a{
+      a {
         border-radius: 4px;
-        padding: 4px 8px;
+        padding: 6px 8px;
         display: block;
         text-decoration: none;
         background-color: rgba($secondary, 0.16);
-        &:hover{
+        &:hover {
           background-color: rgba($secondary, 0.28);
         }
       }

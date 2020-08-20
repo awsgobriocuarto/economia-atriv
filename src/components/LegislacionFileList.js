@@ -14,9 +14,12 @@ function LegislacionFilelist(props) {
             role="tabpanel"
             aria-labelledby={`v-pills-${legislation.id}-tab`}
           >
-            {legislation.files.map((file) => {
-              return <LegislacionFileItem key={file.id} file={file} />;
-            })}
+            <h6>{legislation.title}</h6>
+            <ul>
+              {legislation.files.map((file) => {
+                return <LegislacionFileItem key={file.id} file={file} />;
+              })}
+            </ul>
           </div>
         );
       })}

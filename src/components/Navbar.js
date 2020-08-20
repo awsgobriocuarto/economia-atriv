@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-md navbar-light bg-light">
+  <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div className="container">
       <a className="navbar-brand" href="/">
         <img src={logoAtriv} alt="atriv" />

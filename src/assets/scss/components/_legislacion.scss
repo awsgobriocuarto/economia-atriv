@@ -4,7 +4,7 @@
       background-color: white;
       border: 1px solid $primary;
       margin-bottom: 8px;
-      padding: 16px;
+      padding: 10px 16px;
 
       &.active {
         background-color: $primary;
@@ -25,7 +25,25 @@
     }
   }
   .tab-content {
-    //background-color: blue;
+    h6 {
+      font-weight: 700;
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+      color: $primary;
+      border-bottom: 2px solid $primary;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        color: $gray-800;
+        padding: 12px;
+        border-bottom: 1px solid $gray-400;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
   }
 }
 

@@ -1,9 +1,9 @@
 .headline {
-  background-color: rgba($secondary, 0.2);
+  background-color: lighten($secondary, 20%);
   margin-bottom: 50px;
 
   .container {
-    height: 160px;
+    height: 120px;
 
     display: flex;
     align-items: center;

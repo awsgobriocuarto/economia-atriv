@@ -9,12 +9,12 @@
         {
           "id": 1,
           "filename": "C.T.M. Modificaciones 2020",
-          "path": "http://www.google.com"
+          "path": "http://atriv.riocuarto.gov.ar"
         },
         {
           "id": 2,
           "filename": "C.T.M. Modificaciones 2019",
-          "path": "http://www.google.com"
+          "path": "http://atriv.riocuarto.gov.ar"
         }
       ]
     },
@@ -27,12 +27,12 @@
         {
           "id": 1,
           "filename": "O.T.A 2020",
-          "path": "http://www.google.com"
+          "path": "http://atriv.riocuarto.gov.ar"
         },
         {
           "id": 2,
           "filename": "O.T.A 2019",
-          "path": "http://www.google.com"
+          "path": "http://atriv.riocuarto.gov.ar"
         }
       ]
     },
@@ -45,17 +45,91 @@
         {
           "id": 1,
           "filename": "D.R 2020",
-          "path": "http://www.google.com"
+          "path": "http://atriv.riocuarto.gov.ar"
         },
         {
           "id": 2,
           "filename": "D.R. 2019",
-          "path": "http://www.google.com"
+          "path": "http://atriv.riocuarto.gov.ar"
         },
         {
           "id": 3,
           "filename": "D.R. 2018",
-          "path": "http://www.google.com"
+          "path": "http://atriv.riocuarto.gov.ar"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Agenda de Vincimientos",
+      "active": "",
+      "show": "",
+      "files": [
+        {
+          "id": 1,
+          "filename": "A.V. 2020",
+          "path": "http://atriv.riocuarto.gov.ar"
+        },
+        {
+          "id": 2,
+          "filename": "A.V. 2019",
+          "path": "http://atriv.riocuarto.gov.ar"
+        },
+        {
+          "id": 3,
+          "filename": "A.V. 2018",
+          "path": "http://atriv.riocuarto.gov.ar"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Planes de Pago",
+      "active": "",
+      "show": "",
+      "files": [
+        {
+          "id": 1,
+          "filename": "P.P 2020",
+          "path": "http://atriv.riocuarto.gov.ar"
+        },
+        {
+          "id": 2,
+          "filename": "P.P. 2019",
+          "path": "http://atriv.riocuarto.gov.ar"
+        },
+        {
+          "id": 3,
+          "filename": "P.P. 2018",
+          "path": "http://atriv.riocuarto.gov.ar"
+        },
+        {
+          "id": 4,
+          "filename": "P.P. 2017",
+          "path": "http://atriv.riocuarto.gov.ar"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Otras Normativas",
+      "active": "",
+      "show": "",
+      "files": [
+        {
+          "id": 1,
+          "filename": "O.N 2020",
+          "path": "http://atriv.riocuarto.gov.ar"
+        },
+        {
+          "id": 2,
+          "filename": "O.N. 2019",
+          "path": "http://atriv.riocuarto.gov.ar"
+        },
+        {
+          "id": 3,
+          "filename": "O.N. 2018",
+          "path": "http://atriv.riocuarto.gov.ar"
         }
       ]
     }
