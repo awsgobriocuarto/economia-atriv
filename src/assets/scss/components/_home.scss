@@ -1,64 +1,64 @@
-.home{  
-  .btn-home{
+.home {
+  .btn-home {
     width: 100%;
     border: 1px solid $primary;
     text-align: center;
-    padding: 50px 0;
-    .icon{
+    padding: 55px 0;
+    .icon {
       margin-bottom: 12px;
-      img{
+      img {
         height: 64px;
       }
     }
-    .title{
+    .title {
       color: $primary;
       font-size: 1.2em;
       text-transform: uppercase;
       font-weight: 600;
     }
   }
-  .card-home{
-    .card-header{
+  .card-home {
+    .card-header {
       background-color: $primary;
       color: white;
       text-transform: uppercase;
       font-size: 1.2em;
     }
-    .card-body{
+    .card-body {
       padding: 20px;
-      article{
+      article {
         padding: 12px 0;
         border-bottom: 1px solid rgba($primary, 0.1);
-        p{
+        p {
           margin-bottom: 0;
         }
-        &:first-child{
+        &:first-child {
           padding-top: 0;
         }
-        &:last-child{
+        &:last-child {
           padding-bottom: 0;
           border: 0px;
         }
       }
     }
-  }  
+  }
 }
 
 @media (max-width: 767px) {
-  .home{
-    .btn-home{
+  .home {
+    .btn-home {
       margin-bottom: 30px;
-      padding: 30px 24px;
+      padding: 40px 24px;
 
       display: flex;
       align-items: center;
       justify-content: flex-start;
 
-      .icon{
+      .icon {
         margin-bottom: 0px;
       }
 
-      .title{
+      .title {
         margin-left: 16px;
       }
     }

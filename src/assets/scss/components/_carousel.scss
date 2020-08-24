@@ -1,0 +1,50 @@
+.carousel {
+  //background-color: #000;
+  .carousel-indicators {
+    li {
+      background-color: $secondary;
+    }
+  }
+  .carousel-control-prev {
+    .carousel-control-prev-icon {
+      color: $gray-800;
+    }
+  }
+  .carousel-control-next {
+    .carousel-control-next-icon {
+      color: $gray-800;
+    }
+  }
+  .carousel-inner {
+    border: 1px solid $primary;
+    border-radius: 4px;
+    .carousel-item {
+      height: 216px;
+      .carousel-caption {
+        color: $primary;
+        h5 {
+          margin-bottom: 8px;
+          font-weight: 600;
+        }
+        p {
+          margin-bottom: 16px;
+        }
+        .btn {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        height: 248px;
+        .carousel-caption {
+        }
+      }
+    }
+  }
+}

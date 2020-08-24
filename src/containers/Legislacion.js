@@ -5,8 +5,6 @@ import LegislacionFileList from "../components/LegislacionFileList";
 
 import legislations from "../data/legilations.json";
 
-console.log(legislations.data);
-
 class Legislacion extends Component {
   constructor(props) {
     super(props);

@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor sit amet 1.",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "slug": "titulo-novedad-1"
+    },
+    {
+      "id": 2,
+      "title": "Lorem ipsum dolor sit amet 2.",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "slug": "titulo-novedad-2"
+    },
+    {
+      "id": 3,
+      "title": "Lorem ipsum dolor sit amet 3.",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "slug": "titulo-novedad-3"
+    }
+  ]
+}

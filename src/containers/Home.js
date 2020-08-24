@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
-import Hero from '../components/Hero';
-import { Link } from 'react-router-dom';
-import NovedadesList from '../components/NovedadesList';
+import React, { Component } from "react";
+import Hero from "../components/Hero";
+import { Link } from "react-router-dom";
 
-import deudasPagosIcon from '../assets/statics/deudas-y-pagos.svg';
-import serviciosIcon from '../assets/statics/mas-servicios.svg';
- 
+import deudasPagosIcon from "../assets/statics/deudas-y-pagos.svg";
+import serviciosIcon from "../assets/statics/mas-servicios.svg";
+
+import novedades from "../data/novedades.json";
+import NovedadesCarousel from "../components/NovedadesCarousel";
+
 class Home extends Component {
-  render () {
+  render() {
     return (
       <>
         <Hero />
@@ -17,7 +19,7 @@ class Home extends Component {
               <div className="col-md-3">
                 <Link to="/deudas-y-pagos" className="btn btn-light btn-home">
                   <div className="icon">
-                    <img src={deudasPagosIcon} alt="deudas y pagos"/>
+                    <img src={deudasPagosIcon} alt="deudas y pagos" />
                   </div>
                   <div className="title">Deudas y Pagos</div>
                 </Link>
@@ -25,19 +27,19 @@ class Home extends Component {
               <div className="col-md-3">
                 <Link to="/servicios" className="btn btn-light btn-home">
                   <div className="icon">
-                    <img src={serviciosIcon} alt="deudas y pagos"/>
+                    <img src={serviciosIcon} alt="deudas y pagos" />
                   </div>
                   <div className="title">Más Servicios</div>
                 </Link>
               </div>
               <div className="col-md-6">
-                <NovedadesList />
+                <NovedadesCarousel items={novedades.data} />
               </div>
             </div>
           </div>
         </div>
       </>
-    )
+    );
   }
 }
 

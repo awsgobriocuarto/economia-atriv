@@ -1,10 +1,11 @@
-.hero{
+.hero {
   height: 360px;
   margin-bottom: 60px;
-  background-image: url('https://images.unsplash.com/photo-1503642551022-c011aafb3c88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80');
-  // background-image: url('https://www.grandhotelriocuarto.com.ar/img/enlaces/slide-centro-plaza.jpg');
+  // background-image: url('https://images.unsplash.com/photo-1503642551022-c011aafb3c88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80');
+  // background-image: url("https://www.grandhotelriocuarto.com.ar/img/enlaces/slide-centro-plaza.jpg");
+  background-image: url("https://www.cba.gov.ar/wp-content/uploads/2019/04/puente-en-rio-cuarto1.png");
   background-size: cover;
-  background-position: center center;
+  background-position: center -100px;
 
   display: flex;
   align-items: center;
@@ -12,11 +13,11 @@
 }
 
 @media (max-width: 767px) {
-  .hero{
+  .hero {
     background-color: $gray-200;
     height: 160px;
     margin-bottom: 30px;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
