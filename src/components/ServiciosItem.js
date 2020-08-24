@@ -3,7 +3,7 @@ import ServiceIcon from "./ServiceIcon";
 
 export default function ServiciosItem(props) {
   const services = props.services;
-  let anchorRef = React.createRef();
+  // let anchorRef = React.createRef();
   return (
     <>
       {services.map((service) => {
@@ -31,7 +31,7 @@ export default function ServiciosItem(props) {
                 </div>
               </a>
             ) : (
-              <a href={service.url} className="item" innerRef={anchorRef}>
+              <a href={service.url} className="item">
                 <div className="row">
                   <div className="col-md-3">
                     <div className="item-icon">

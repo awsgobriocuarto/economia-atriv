@@ -23,7 +23,7 @@ export default function CalendarioItem(props) {
                     "btn " +
                     (event.url.length ? "btn-primary" : "btn-primary disabled")
                   }
-                  disable={event.url.length > 0}
+                  disable={event.url}
                 >
                   consultar
                 </a>

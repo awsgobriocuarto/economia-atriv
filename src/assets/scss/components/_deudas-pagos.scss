@@ -1,7 +1,7 @@
 .deudas-pagos {
   .card {
     padding: 0;
-    // height: 220px;
+    height: 240px;
     margin-bottom: 30px;
     .card-header {
       padding: 12px;
@@ -46,6 +46,15 @@
           background-color: rgba($secondary, 0.28);
         }
       }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .deudas-pagos {
+    .card {
+      height: inherit;
+      margin-bottom: 30px;
     }
   }
 }
