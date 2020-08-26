@@ -3,4 +3,13 @@
   padding: 50px 0;
   background-color: $primary;
   color: white;
+  h3 {
+    a {
+      text-decoration: none;
+      color: $warning;
+    }
+  }
+  .googlemaps {
+    width: 100%;
+  }
 }

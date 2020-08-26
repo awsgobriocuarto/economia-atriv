@@ -11,20 +11,22 @@ function Cta0800(props) {
           <div className="row">
             <div className="col-md-6">
               <p className="mb-1">Comunicate con nosotros al</p>
-              <h3 className="text-warning">0800 444 5454</h3>
+              <h3>
+                <a href="tel:08004445454">0800 444 5454</a>
+              </h3>
               <h5>*Opción 3</h5>
               <h6>De lunes a viernes de 9 a 13hs</h6>
               <h6>Constitución 988, Río Cuarto, Córdoba.</h6>
             </div>
             <div className="col-md-6">
               <iframe
+                className="googlemaps"
                 src={googlemap}
-                width="600"
                 height="250"
-                frameborder="0"
-                allowfullscreen=""
+                frameBorder="0"
+                allowFullScreen=""
                 aria-hidden="false"
-                tabindex="0"
+                tabIndex="0"
                 title="googlemap"
               ></iframe>
             </div>
