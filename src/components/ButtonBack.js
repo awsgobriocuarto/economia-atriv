@@ -14,7 +14,12 @@ function ButtonBack(props) {
         >
           Volver
         </button> */}
-        <a href={path ? path : "/"} className="btn btn-sm btn-outline-primary">
+        <a
+          href={
+            path ? process.env.PUBLIC_URL + path : process.env.PUBLIC_URL + "/"
+          }
+          className="btn btn-sm btn-outline-primary"
+        >
           Volver
         </a>
       </div>

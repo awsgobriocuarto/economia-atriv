@@ -1,47 +1,47 @@
 import React from "react";
 import ButtonIcon from "./ButtonIcon";
 
-export default function ServiciosItem(props) {
-  const services = props.services;
+function PagosItem(props) {
+  const pagos = props.pagos;
   return (
     <>
-      {services.map((service) => {
+      {pagos.map((pago) => {
         return (
-          <div key={service.id} className="col-md-6">
-            {service.external ? (
+          <div key={pago.id} className="col-md-6">
+            {pago.external ? (
               <a
-                href={service.url}
+                href={pago.url}
                 target="_blank"
-                alt={service.title}
+                alt={pago.title}
                 className="item"
                 rel="noopener noreferrer"
               >
                 <div className="row">
                   <div className="col-md-3">
                     <div className="item-icon">
-                      <ButtonIcon icon={service.icon} size="3x" />
+                      <ButtonIcon icon={pago.icon} size="3x" />
                     </div>
                   </div>
                   <div className="col-md-9">
                     <div className="item-body">
-                      <div className="item-title">{service.title}</div>
-                      <div className="item-summary">{service.summary}</div>
+                      <div className="item-title">{pago.title}</div>
+                      <div className="item-summary">{pago.summary}</div>
                     </div>
                   </div>
                 </div>
               </a>
             ) : (
-              <a href={process.env.PUBLIC_URL + service.url} className="item">
+              <a href={pago.url} className="item">
                 <div className="row">
                   <div className="col-md-3">
                     <div className="item-icon">
-                      <ButtonIcon icon={service.icon} size="3x" />
+                      <ButtonIcon icon={pago.icon} size="3x" />
                     </div>
                   </div>
                   <div className="col-md-9">
                     <div className="item-body">
-                      <div className="item-title">{service.title}</div>
-                      <div className="item-summary">{service.summary}</div>
+                      <div className="item-title">{pago.title}</div>
+                      <div className="item-summary">{pago.summary}</div>
                     </div>
                   </div>
                 </div>
@@ -53,3 +53,5 @@ export default function ServiciosItem(props) {
     </>
   );
 }
+
+export default PagosItem;

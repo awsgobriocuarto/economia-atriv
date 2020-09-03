@@ -16,7 +16,10 @@ class Home extends Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-3">
-                <a href="/deudas-y-pagos" className="btn btn-light btn-home">
+                <a
+                  href={`${process.env.PUBLIC_URL}/deudas-y-pagos`}
+                  className="btn btn-light btn-home"
+                >
                   <div className="icon">
                     <img src={deudasPagosIcon} alt="deudas y pagos" />
                   </div>
@@ -24,9 +27,12 @@ class Home extends Component {
                 </a>
               </div>
               <div className="col-md-3">
-                <a href="/servicios" className="btn btn-light btn-home">
+                <a
+                  href={`${process.env.PUBLIC_URL}/servicios`}
+                  className="btn btn-light btn-home"
+                >
                   <div className="icon">
-                    <img src={serviciosIcon} alt="deudas y pagos" />
+                    <img src={serviciosIcon} alt="servicios" />
                   </div>
                   <div className="title">Más Servicios</div>
                 </a>

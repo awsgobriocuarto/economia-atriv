@@ -8,7 +8,7 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 const Navbar = () => (
   <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div className="container">
-      <a className="navbar-brand" href="/">
+      <a className="navbar-brand" href={`${process.env.PUBLIC_URL}`}>
         <img src={logoAtriv} alt="atriv" />
       </a>
       <button
@@ -26,22 +26,28 @@ const Navbar = () => (
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a href="/" className="nav-link">
+            <a href={`${process.env.PUBLIC_URL}`} className="nav-link">
               Inicio
             </a>
           </li>
           <li className="nav-item">
-            <a href="/deudas-y-pagos" className="nav-link">
+            <a
+              href={`${process.env.PUBLIC_URL}/deudas-y-pagos`}
+              className="nav-link"
+            >
               Deudas y Pagos
             </a>
           </li>
           <li className="nav-item">
-            <a href="/servicios" className="nav-link">
-              Servicios
+            <a
+              href={`${process.env.PUBLIC_URL}/servicios`}
+              className="nav-link"
+            >
+              Más Servicios
             </a>
           </li>
           <li className="nav-item">
-            <a href="/contacto" className="nav-link">
+            <a href={`${process.env.PUBLIC_URL}/contacto`} className="nav-link">
               Contacto
             </a>
           </li>

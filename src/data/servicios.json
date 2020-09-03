@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "legislacion",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "icon": "faBriefcase",
+      "url": "/legislacion",
+      "external": false
+    },
+    {
+      "id": 2,
+      "title": "medios de pago",
+      "summary": "Conocé todos los medios en donde podés realizar los pagos de impuestos municipales.",
+      "icon": "faCreditCard",
+      "url": "/medios-de-pago",
+      "external": false
+    },
+    {
+      "id": 3,
+      "title": "contacto",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "icon": "faEnvelope",
+      "url": "/contacto",
+      "external": false
+    },
+    {
+      "id": 4,
+      "title": "tutoriales",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "icon": "faAtlas",
+      "url": "/tutoriales",
+      "external": false
+    },
+    {
+      "id": 5,
+      "title": "consultas",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "icon": "faAtlas",
+      "url": "/tutoriales",
+      "external": false
+    },
+    {
+      "id": 6,
+      "title": "contribuyentes",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "icon": "faAtlas",
+      "url": "/tutoriales",
+      "external": false
+    },
+    {
+      "id": 7,
+      "title": "guía de trámites",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "icon": "faEdit",
+      "url": "http://tramites.riocuarto.gov.ar/",
+      "external": true
+    },
+    {
+      "id": 8,
+      "title": "cedulón digital",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "icon": "faEnvelope",
+      "url": "http://cidi.riocuarto.gov.ar/?cidi=5575683555726C625A66587A6172664676544642464D58696A7A733D",
+      "external": true
+    }
+  ]
+}

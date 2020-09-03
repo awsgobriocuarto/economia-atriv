@@ -17,7 +17,7 @@ function CarouselInner(props) {
                 <h5>{item.title}</h5>
                 <p>{item.summary}</p>
                 <a
-                  href={`/novedades/${item.slug}`}
+                  href={`${process.env.PUBLIC_URL}/novedades/${item.slug}`}
                   className="btn btn-outline-primary"
                 >
                   ver más

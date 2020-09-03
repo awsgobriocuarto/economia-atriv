@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "../components/Layout";
 
 import Home from "../containers/Home";
-import DeudasPagos from "../containers/DeudasPagos";
+import Pagos from "../containers/Pagos";
 import Servicios from "../containers/Servicios";
 import NotFound from "../containers/NotFound";
 import Novedades from "../containers/Novedades";
@@ -21,7 +21,7 @@ function App() {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/deudas-y-pagos" component={DeudasPagos} />
+          <Route exact path="/deudas-y-pagos" component={Pagos} />
           <Route exact path="/servicios" component={Servicios} />
           <Route exact path="/legislacion" component={Legislacion} />
           <Route exact path="/medios-de-pago" component={MediosDePago} />
