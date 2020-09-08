@@ -2,9 +2,6 @@ import React from "react";
 
 import logoAtriv from "../assets/statics/administracion-tributaria-isologo.svg";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-
 const Navbar = () => (
   <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div className="container">
@@ -58,7 +55,7 @@ const Navbar = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faFacebook} className="mr-1" />
+              <i className="fab fa-facebook"></i>
               <span className="ml-1 d-sm-none">Facebook</span>
             </a>
           </li>
@@ -69,7 +66,7 @@ const Navbar = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faInstagram} className="mr-1" />
+              <i className="fab fa-instagram"></i>
               <span className="ml-1 d-sm-none">Instagram</span>
             </a>
           </li>

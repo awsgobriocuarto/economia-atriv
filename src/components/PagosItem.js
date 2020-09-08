@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonIcon from "./ButtonIcon";
 
 function PagosItem(props) {
   const pagos = props.pagos;
@@ -19,7 +18,7 @@ function PagosItem(props) {
                 <div className="row">
                   <div className="col-md-3">
                     <div className="item-icon">
-                      <ButtonIcon icon={pago.icon} size="3x" />
+                      <i className={pago.icon}></i>
                     </div>
                   </div>
                   <div className="col-md-9">
@@ -35,7 +34,7 @@ function PagosItem(props) {
                 <div className="row">
                   <div className="col-md-3">
                     <div className="item-icon">
-                      <ButtonIcon icon={pago.icon} size="3x" />
+                      <i className={pago.icon}></i>
                     </div>
                   </div>
                   <div className="col-md-9">

@@ -4,7 +4,7 @@
       "id": 1,
       "title": "patentes",
       "summary": "Utilizá este medio para consultar o pagar tus patentes.",
-      "icon": "faCar",
+      "icon": "fas fa-3x fa-car",
       "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Pate",
       "external": true
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "title": "inmobiliario",
       "summary": "Utilizá este medio para consultar o pagar tus impuestos inmobiliarios.",
-      "icon": "faHome",
+      "icon": "fas fa-3x fa-home",
       "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Inmo",
       "external": true
     },
@@ -20,6 +20,7 @@
       "id": 3,
       "title": "comercio / industria",
       "summary": "Utilizá este medio para consultar o pagar tus impuestos tributarios.",
+      "icon": "fas fa-3x fa-industry",
       "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Come",
       "external": true
     },
@@ -27,7 +28,7 @@
       "id": 4,
       "title": "emos",
       "summary": "Utilizá este medio para consultar o pagar tus impuestos.",
-      "icon": "faTint",
+      "icon": "fas fa-3x fa-tint",
       "url": "https://emosvirtual.riocuarto.gov.ar:9090/emosweb/servlet/com.emosweb.login",
       "external": true
     },
@@ -35,7 +36,7 @@
       "id": 5,
       "title": "planes de viviendas / terrenos",
       "summary": "Utilizá este medio para consultar o pagar tu plan de vivienda o cuota de terreno.",
-      "icon": "faKey",
+      "icon": "fas fa-3x fa-key",
       "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hcedupremul?Pres",
       "external": true
     },
@@ -43,7 +44,7 @@
       "id": 6,
       "title": "cementerio",
       "summary": "Utilizá este medio para consultar o pagar tu impuesto de cementerio.",
-      "icon": "faDove",
+      "icon": "fas fa-3x fa-dove",
       "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Pant",
       "external": true
     },
@@ -51,7 +52,7 @@
       "id": 7,
       "title": "actas de tránsito",
       "summary": "Utilizá este medio para consultar o pagar tus multas o infracciones de tránsito.",
-      "icon": "faCar",
+      "icon": "fas fa-3x fa-file-invoice",
       "url": "https://app.riocuarto.gov.ar:8443/EdecomActas/servlet/com.edecomweb.consultaactas",
       "external": true
     }

@@ -54,22 +54,22 @@ const Footer = (props) => (
           <div className="title">Seguinos en nuestras redes</div>
           <p>
             <a
-              className="mr-2"
+              className="text-decoration-none mr-3"
               href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faFacebook} size="lg" />
-              <span className="ml-1 d-sm-none">Facebook</span>
+              <i className="fab fa-facebook mr-1"></i>
+              <span> Facebook</span>
             </a>
             <a
-              className="mr-2"
+              className="text-decoration-none "
               href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
-              <span className="ml-1 d-sm-none">Instagram</span>
+              <i className="fab fa-instagram mr-1"></i>
+              <span>Instagram</span>
             </a>
           </p>
         </div>

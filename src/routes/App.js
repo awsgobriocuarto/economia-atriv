@@ -3,15 +3,17 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Layout from "../components/Layout";
 
-import Home from "../containers/Home";
-import Pagos from "../containers/Pagos";
-import Servicios from "../containers/Servicios";
-import NotFound from "../containers/NotFound";
-import Novedades from "../containers/Novedades";
-import Legislacion from "../containers/Legislacion";
-import MediosDePago from "../containers/MediosDePagos";
-import Contacto from "../containers/Contacto";
-import Tutoriales from "../containers/Tutoriales";
+import Home from "../pages/Home";
+import Pagos from "../pages/Pagos";
+import Servicios from "../pages/Servicios";
+import NotFound from "../pages/NotFound";
+import Novedades from "../pages/Novedades";
+import Legislacion from "../pages/Legislacion";
+import MediosDePago from "../pages/MediosDePagos";
+import Contacto from "../pages/Contacto";
+import Tutoriales from "../pages/Tutoriales";
+import Consultas from "../pages/Consultas";
+import Contribuyentes from "../pages/Contribuyentes";
 
 import "../assets/scss/styles.scss";
 
@@ -26,6 +28,8 @@ function App() {
           <Route exact path="/legislacion" component={Legislacion} />
           <Route exact path="/medios-de-pago" component={MediosDePago} />
           <Route exact path="/contacto" component={Contacto} />
+          <Route exact path="/consultas" component={Consultas} />
+          <Route exact path="/contribuyentes" component={Contribuyentes} />
           <Route exact path="/tutoriales" component={Tutoriales} />
           <Route exact path="/novedades/:slug" component={Novedades} />
           <Route path="*" component={NotFound} />

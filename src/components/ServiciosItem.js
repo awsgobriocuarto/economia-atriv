@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonIcon from "./ButtonIcon";
 
 export default function ServiciosItem(props) {
   const services = props.services;
@@ -19,7 +18,7 @@ export default function ServiciosItem(props) {
                 <div className="row">
                   <div className="col-md-3">
                     <div className="item-icon">
-                      <ButtonIcon icon={service.icon} size="3x" />
+                      <i className={service.icon}></i>
                     </div>
                   </div>
                   <div className="col-md-9">
@@ -35,7 +34,7 @@ export default function ServiciosItem(props) {
                 <div className="row">
                   <div className="col-md-3">
                     <div className="item-icon">
-                      <ButtonIcon icon={service.icon} size="3x" />
+                      <i className={service.icon}></i>
                     </div>
                   </div>
                   <div className="col-md-9">
