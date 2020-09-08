@@ -8,7 +8,7 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 const Navbar = () => (
   <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div className="container">
-      <a className="navbar-brand" href={`${process.env.PUBLIC_URL}`}>
+      <a className="navbar-brand" href="/">
         <img src={logoAtriv} alt="atriv" />
       </a>
       <button
@@ -26,7 +26,7 @@ const Navbar = () => (
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a href={`${process.env.PUBLIC_URL}`} className="nav-link">
+            <a href="/" className="nav-link">
               Inicio
             </a>
           </li>
