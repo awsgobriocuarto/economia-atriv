@@ -1,9 +1,13 @@
 .headline {
   background-color: lighten($secondary, 20%);
-  margin-bottom: 50px;
+  z-index: 99;
+  //margin-bottom: 50px;
+  position: sticky;
+  top: 108px;
+  width: 100%;
 
   .container {
-    height: 120px;
+    height: 80px;
 
     display: flex;
     align-items: center;
@@ -11,6 +15,7 @@
 
     h3 {
       color: $primary;
+      font-size: 1.4em;
     }
     .icon {
       img {
@@ -23,11 +28,12 @@
 
 @media (max-width: 767px) {
   .headline {
-    margin-bottom: 30px;
+    top: 98px;
+    //margin-bottom: 20px;
     .container {
-      height: 80px;
+      height: 60px;
       h3 {
-        font-size: 1.6em;
+        font-size: 1.2em;
       }
       .icon {
         display: none;

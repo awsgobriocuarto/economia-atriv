@@ -1,18 +1,30 @@
 .home {
   .btn-home {
     width: 100%;
-    border: 1px solid $primary;
     text-align: center;
-    padding: 55px 0;
+    padding: 40px 0;
+    border: 1px solid rgba($primary, 0.1);
+    box-shadow: 0px 4px 16px rgba($primary, 0.2);
+    background-color: #fff;
+    &:hover {
+      box-shadow: 0px 4px 16px rgba($primary, 0.3);
+      .icon {
+        color: rgba($primary, 1);
+      }
+    }
     .icon {
-      color: $secondary;
-      margin-bottom: 12px;
+      color: rgba($primary, 0.9);
+      margin-bottom: 16px;
+      svg {
+        width: 68px;
+      }
     }
     .title {
       color: $primary;
       font-size: 1.4em;
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 400;
+      letter-spacing: -0.02em;
     }
   }
   .card-home {
@@ -46,7 +58,7 @@
   .home {
     .btn-home {
       margin-bottom: 30px;
-      padding: 40px 24px;
+      padding: 30px 24px;
 
       display: flex;
       align-items: center;
@@ -54,10 +66,10 @@
 
       .icon {
         margin-bottom: 0px;
+        margin-right: 24px;
       }
 
       .title {
-        margin-left: 16px;
       }
     }
   }

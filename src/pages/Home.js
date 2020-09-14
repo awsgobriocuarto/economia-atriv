@@ -1,50 +1,53 @@
 import React, { Component } from "react";
 import Hero from "../components/Hero";
+import ConsultsIcon from "../components/Icons/ConsultsIcon";
+import LiabilitiesIcon from "../components/Icons/LiabilitiesIcon";
+import ServicesIcon from "../components/Icons/ServicesIcon";
 
 class Home extends Component {
   render() {
     return (
       <>
         <Hero />
-        <div className="home">
+        <section className="home">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-md-4">
+              <div className="col-md-3">
                 <a
                   href={`${process.env.PUBLIC_URL}/deudas-y-pagos`}
                   className="btn btn-light btn-home"
                 >
                   <div className="icon">
-                    <i className="fas fa-4x fa-hand-holding-usd"></i>
+                    <LiabilitiesIcon />
                   </div>
                   <div className="title">Deudas y Pagos</div>
                 </a>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-3">
                 <a
                   href={`${process.env.PUBLIC_URL}/servicios`}
                   className="btn btn-light btn-home"
                 >
                   <div className="icon">
-                    <i className="fas fa-4x fa-laptop"></i>
+                    <ServicesIcon />
                   </div>
                   <div className="title">Servicios</div>
                 </a>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-3">
                 <a
-                  href={`${process.env.PUBLIC_URL}/servicios`}
+                  href={`${process.env.PUBLIC_URL}/consultas`}
                   className="btn btn-light btn-home"
                 >
                   <div className="icon">
-                    <i className="fas fa-4x fa-search"></i>
+                    <ConsultsIcon />
                   </div>
                   <div className="title">Consultas</div>
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </>
     );
   }

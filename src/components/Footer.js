@@ -52,21 +52,22 @@ const Footer = (props) => (
           <div className="title">Seguinos en nuestras redes</div>
           <p>
             <a
-              className="text-decoration-none mr-3"
+              className="text-decoration-none"
               href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-facebook mr-1"></i>
-              <span> Facebook</span>
+              <i className="fab fa-fw fa-facebook mr-1"></i>
+              <span>Facebook</span>
             </a>
+            <br />
             <a
               className="text-decoration-none "
               href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-instagram mr-1"></i>
+              <i className="fab fa-fw fa-instagram mr-1"></i>
               <span>Instagram</span>
             </a>
           </p>

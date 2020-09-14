@@ -1,15 +1,18 @@
-.cta0800 {
-  margin-top: 100px;
-  padding: 50px 0;
+.cta {
   background-color: $primary;
   color: white;
-  h3 {
-    a {
-      text-decoration: none;
-      color: $warning;
-    }
+  text-align: center;
+  p {
+    margin-bottom: 4px;
+    font-size: 1.1em;
+    font-weight: 300;
+    // text-transform: uppercase;
   }
-  .googlemaps {
-    width: 100%;
+  h3 {
+    margin-bottom: 24px;
+    color: $secondary;
+  }
+  .btn {
+    text-transform: uppercase;
   }
 }

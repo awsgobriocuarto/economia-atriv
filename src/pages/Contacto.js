@@ -45,10 +45,10 @@ class Contacto extends Component {
   render() {
     return (
       <>
-        <Headline title="Servicios" pathGoBack="/servicios" />
-        <div className="contacto">
+        <Headline title="Servicios" pathGoBack="/consultas" />
+        <section className="contacto">
           <div className="container">
-            <h4>Consultas</h4>
+            <h4>Contacto</h4>
             <div className="row">
               <div className="col-md-8">
                 <div className="card form">
@@ -145,7 +145,7 @@ class Contacto extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </>
     );
   }

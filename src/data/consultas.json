@@ -31,38 +31,6 @@
       "icon": "far fa-3x fa-play-circle",
       "url": "/tutoriales",
       "external": false
-    },
-    {
-      "id": 5,
-      "title": "consultas",
-      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
-      "icon": "far fa-3x fa-question-circle",
-      "url": "/consultas",
-      "external": false
-    },
-    {
-      "id": 6,
-      "title": "contribuyentes",
-      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
-      "icon": "far fa-3x fa-user",
-      "url": "/contribuyentes",
-      "external": false
-    },
-    {
-      "id": 7,
-      "title": "guía de trámites",
-      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
-      "icon": "fas fa-3x fa-list-ol",
-      "url": "http://tramites.riocuarto.gov.ar/",
-      "external": true
-    },
-    {
-      "id": 8,
-      "title": "cedulón digital",
-      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
-      "icon": "far fa-3x fa-file-alt",
-      "url": "http://cidi.riocuarto.gov.ar/?cidi=5575683555726C625A66587A6172664676544642464D58696A7A733D",
-      "external": true
     }
   ]
 }

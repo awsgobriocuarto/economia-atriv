@@ -15,8 +15,8 @@ class Tutoriales extends Component {
   render() {
     return (
       <>
-        <Headline title="Servicios" pathGoBack="/servicios" />
-        <div className="tutoriales">
+        <Headline title="Servicios" pathGoBack="/consultas" />
+        <section className="tutoriales">
           <div className="container">
             <h4>Tutoriales</h4>
             <div className="row">
@@ -29,7 +29,7 @@ class Tutoriales extends Component {
               })}
             </div>
           </div>
-        </div>
+        </section>
       </>
     );
   }

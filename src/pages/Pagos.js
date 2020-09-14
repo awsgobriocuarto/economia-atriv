@@ -1,12 +1,16 @@
 import React from "react";
 import Headline from "../components/Headline";
-import PagosList from "../components/PagosList";
+import ButtonList from "../components/ButtonList";
+
+import data from "../data/pagos.json";
 
 function Pagos() {
   return (
     <>
       <Headline title="Deudas y Pagos" pathGoBack="/" />
-      <PagosList />
+      <section>
+        <ButtonList items={data.data} />
+      </section>
     </>
   );
 }

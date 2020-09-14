@@ -1,14 +1,20 @@
 import React from "react";
 import Headline from "../components/Headline";
-import ServiciosList from "../components/ServiciosList";
+import ButtonList from "../components/ButtonList";
 import CalendarioList from "../components/CalendarioList";
+
+import data from "../data/servicios.json";
 
 function Servicios() {
   return (
     <>
       <Headline title="Servicios" pathGoBack="/" />
-      <ServiciosList />
-      <CalendarioList />
+      <section>
+        <ButtonList items={data.data} />
+      </section>
+      <section className="calendar">
+        <CalendarioList />
+      </section>
     </>
   );
 }

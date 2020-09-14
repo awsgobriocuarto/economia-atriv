@@ -17,8 +17,8 @@ class Legislacion extends Component {
   render() {
     return (
       <>
-        <Headline title="Servicios" pathGoBack="/servicios" />
-        <div className="legislacion">
+        <Headline title="Servicios" pathGoBack="/consultas" />
+        <section className="legislacion">
           <div className="container">
             <h4>Legislacion</h4>
             <div className="row">
@@ -30,7 +30,7 @@ class Legislacion extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </>
     );
   }

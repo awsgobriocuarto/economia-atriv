@@ -6,23 +6,14 @@ function ButtonBack(props) {
   const path = props.path;
   return (
     <div className="button-goBack">
-      <div className="container">
-        {/* <button
-          type="button"
-          onClick={() => history.goBack()}
-          className="btn btn-sm btn-outline-primary"
-        >
-          Volver
-        </button> */}
-        <a
-          href={
-            path ? process.env.PUBLIC_URL + path : process.env.PUBLIC_URL + "/"
-          }
-          className="btn btn-sm btn-outline-primary"
-        >
-          Volver
-        </a>
-      </div>
+      <a
+        href={
+          path ? process.env.PUBLIC_URL + path : process.env.PUBLIC_URL + "/"
+        }
+        className="btn btn-sm btn-outline-primary"
+      >
+        Volver
+      </a>
     </div>
   );
 }

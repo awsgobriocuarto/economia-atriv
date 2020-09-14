@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-import Headline from '../components/Headline';
+import React, { Component } from "react";
+import Headline from "../components/Headline";
 
 class Novedades extends Component {
-  render () {
+  render() {
     const item = this.props.match.params.slug;
     return (
       <>
-        <Headline title="Novedades" icon="" />
-        <div className="container">
-          {item}
-        </div>
+        <Headline title="Novedades" />
+        <div className="container">{item}</div>
       </>
-    )
+    );
   }
 }
 

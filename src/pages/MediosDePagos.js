@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Headline from "../components/Headline";
 
-import googleMap from "../assets/statics/google-map.png";
 import Modal from "../components/Modal";
 
 class MediosDePago extends Component {
@@ -24,8 +23,8 @@ class MediosDePago extends Component {
   render() {
     return (
       <>
-        <Headline title="Servicios" pathGoBack="/servicios" />
-        <div className="medios-pagos">
+        <Headline title="Servicios" pathGoBack="/consultas" />
+        <section className="medios-pagos">
           <div className="container">
             <h4>Medios De Pago</h4>
             <h5>Pagá Online a través de "Pagos 360"</h5>
@@ -135,10 +134,8 @@ class MediosDePago extends Component {
                 <div className="logo">medio de pago</div>
               </div>
             </div>
-            <h5>Ubicación</h5>
-            <img src={googleMap} alt="google map" className="img-fluid" />
           </div>
-        </div>
+        </section>
       </>
     );
   }
