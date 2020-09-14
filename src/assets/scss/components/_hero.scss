@@ -1,23 +1,35 @@
 .hero {
-  height: 360px;
   margin-bottom: 60px;
-  background-image: url("../../statics/foto-rio-cuarto-hero.png");
-  background-size: cover;
-  background-position: center -40px;
+  position: relative;
+  background-color: $primary;
+  .image-bg {
+    height: 360px;
+    background-image: url("../../statics/foto-rio-cuarto-hero.png");
+    background-size: cover;
+    background-position: center -40px;
+    opacity: 0.2;
+  }
+  .content {
+    top: 0;
+    width: 100%;
+    height: 360px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 767px) {
   .hero {
-    background-color: $gray-200;
-    height: 160px;
     margin-bottom: 30px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .image-bg {
+      background-position: center 0px;
+    }
+    .image-bg,
+    .content {
+      height: 340px;
+    }
   }
 }

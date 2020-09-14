@@ -5,16 +5,14 @@
     text-align: center;
     padding: 55px 0;
     .icon {
+      color: $secondary;
       margin-bottom: 12px;
-      img {
-        height: 64px;
-      }
     }
     .title {
       color: $primary;
-      font-size: 1.2em;
+      font-size: 1.4em;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 500;
     }
   }
   .card-home {

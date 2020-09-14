@@ -14,11 +14,11 @@ function CarouselInner(props) {
               }
             >
               <div className="carousel-caption">
-                <h5>{item.title}</h5>
+                <h3>{item.title}</h3>
                 <p>{item.summary}</p>
                 <a
                   href={`${process.env.PUBLIC_URL}/novedades/${item.slug}`}
-                  className="btn btn-outline-primary"
+                  className="btn btn-outline-light"
                 >
                   ver más
                 </a>

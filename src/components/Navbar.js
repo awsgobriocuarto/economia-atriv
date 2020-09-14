@@ -40,7 +40,15 @@ const Navbar = () => (
               href={`${process.env.PUBLIC_URL}/servicios`}
               className="nav-link"
             >
-              Más Servicios
+              Servicios
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href={`${process.env.PUBLIC_URL}/consultas`}
+              className="nav-link"
+            >
+              Consultas
             </a>
           </li>
           <li className="nav-item">

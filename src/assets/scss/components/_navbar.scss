@@ -1,20 +1,30 @@
-.navbar{
+.navbar {
   padding: 20px;
   margin-bottom: 0;
-  
-  .navbar-brand{
+
+  .navbar-brand {
     // background-color: orange;
-    img{
+    img {
       height: 68px;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      // background-color: orange;
+      padding-left: 4px;
+      padding-right: 4px;
+      .nav-link {
+        letter-spacing: -0.02em;
+      }
     }
   }
 }
 
 @media (max-width: 767px) {
-  .navbar{
+  .navbar {
     padding: 16px 20px;
-    .navbar-brand{
-      img{
+    .navbar-brand {
+      img {
         height: 60px;
       }
     }
