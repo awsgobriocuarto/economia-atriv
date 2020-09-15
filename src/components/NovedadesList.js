@@ -2,32 +2,28 @@ import React, { Component } from "react";
 import NovedadesItem from "./NovedadesItem";
 
 class Novedades extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      items: [
-        {
-          id: 1,
-          title: "Lorem ipsum dolor sit amet 1.",
-          summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-          slug: "titulo-novedad-1",
-        },
-        {
-          id: 2,
-          title: "Lorem ipsum dolor sit amet 2.",
-          summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-          slug: "titulo-novedad-2",
-        },
-        {
-          id: 3,
-          title: "Lorem ipsum dolor sit amet 3.",
-          summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-          slug: "titulo-novedad-3",
-        },
-      ],
-    };
-  }
+  state = {
+    items: [
+      {
+        id: 1,
+        title: "Lorem ipsum dolor sit amet 1.",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        slug: "titulo-novedad-1",
+      },
+      {
+        id: 2,
+        title: "Lorem ipsum dolor sit amet 2.",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        slug: "titulo-novedad-2",
+      },
+      {
+        id: 3,
+        title: "Lorem ipsum dolor sit amet 3.",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        slug: "titulo-novedad-3",
+      },
+    ],
+  };
   render() {
     const { items } = this.state;
 

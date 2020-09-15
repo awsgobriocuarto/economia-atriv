@@ -1,6 +1,5 @@
 import React from "react";
 
-import novedades from "../data/novedades.json";
 import NovedadesCarousel from "../components/NovedadesCarousel";
 
 const Hero = (props) => (
@@ -10,7 +9,7 @@ const Hero = (props) => (
       <div className="container">
         <div className="row justify-content-center">
           <div className="col">
-            <NovedadesCarousel items={novedades.data} />
+            <NovedadesCarousel />
           </div>
         </div>
       </div>

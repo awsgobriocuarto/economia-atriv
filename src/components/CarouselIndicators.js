@@ -5,13 +5,13 @@ function CarouselIndicators(props) {
   return (
     <>
       <ol className="carousel-indicators">
-        {items.map((item) => {
+        {items.map((item, index) => {
           return (
             <li
               key={item.id}
               data-target="#carouselSlides"
-              data-slide-to={item.id - 1}
-              className={item.id === 1 ? "active" : null}
+              data-slide-to={index}
+              className={index === 0 ? "active" : null}
             ></li>
           );
         })}

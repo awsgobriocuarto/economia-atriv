@@ -5,23 +5,25 @@ function CarouselInner(props) {
   return (
     <>
       <div className="carousel-inner">
-        {items.map((item) => {
+        {items.map((item, index) => {
           return (
             <div
               key={item.id}
-              className={
-                item.id === 1 ? "carousel-item active" : "carousel-item"
-              }
+              className={index === 0 ? "carousel-item active" : "carousel-item"}
             >
               <div className="carousel-caption">
-                <h3>{item.title}</h3>
-                <p>{item.summary}</p>
-                <a
-                  href={`${process.env.PUBLIC_URL}/novedades/${item.slug}`}
-                  className="btn btn-outline-light"
-                >
-                  ver más
-                </a>
+                <div className="caption-content">
+                  <h3>{item.titulo}</h3>
+                  <p>{item.resumen}</p>
+                  {item.link && (
+                    <a
+                      href={`${process.env.PUBLIC_URL}/novedades/${item.slug}`}
+                      className="btn btn-outline-light"
+                    >
+                      ver más
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           );
