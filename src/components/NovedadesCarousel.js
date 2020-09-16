@@ -12,6 +12,7 @@ export default class NovedadesCarousel extends React.Component {
 
   componentDidMount() {
     const apiUrl = "https://atriv.herokuapp.com/novedades";
+    // const apiUrl = "http://localhost:1337/novedades/";
     this.setState({
       isLoading: true,
     });
