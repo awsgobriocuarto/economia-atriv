@@ -18,7 +18,7 @@ export default class NovedadesCarousel extends React.Component {
     axios
       .get(apiUrl, {
         params: {
-          _limit: 3,
+          _limit: 5,
         },
       })
       .then((res) => {
