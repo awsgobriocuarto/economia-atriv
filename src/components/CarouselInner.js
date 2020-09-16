@@ -13,15 +13,25 @@ function CarouselInner(props) {
             >
               <div className="carousel-caption">
                 <div className="caption-content">
-                  <h3>{item.titulo}</h3>
-                  <p>{item.resumen}</p>
-                  {item.link && (
+                  <h3>{item.title}</h3>
+                  {item.link && item.url ? (
                     <a
-                      href={`${process.env.PUBLIC_URL}/novedades/${item.slug}`}
+                      href={item.url}
                       className="btn btn-outline-light"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      ver más
+                      ir al contenido
                     </a>
+                  ) : (
+                    item.link && (
+                      <a
+                        href={`${process.env.PUBLIC_URL}/novedades/${item.slug}`}
+                        className="btn btn-outline-light"
+                      >
+                        más información
+                      </a>
+                    )
                   )}
                 </div>
               </div>
