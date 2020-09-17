@@ -1,76 +1,125 @@
 import React from "react";
+import pagos from "../data/pagos.json";
+import servicios from "../data/servicios.json";
+import consultas from "../data/consultas.json";
 
 const Footer = (props) => (
   <footer>
     <div className="container">
-      <div className="row">
-        <div className="col-md-3">
+      <div className="row justify-content-center">
+        <div className="col-md-3 d-none d-lg-block">
+          <div className="title">Deudas y Pagos</div>
+          <ul className="links">
+            {pagos.data.map((pago) => {
+              return (
+                <>
+                  {pago.external ? (
+                    <li class="links-item">
+                      <a
+                        href={pago.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {pago.title}
+                      </a>
+                    </li>
+                  ) : (
+                    <li class="links-item">
+                      <a href={`${process.env.PUBLIC_URL}/${pago.url}`}>
+                        {pago.title}
+                      </a>
+                    </li>
+                  )}
+                </>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="col-md-3 d-none d-lg-block">
+          <div className="title">Servicios</div>
+          <ul className="links">
+            {servicios.data.map((servicio) => {
+              return (
+                <>
+                  {servicio.external ? (
+                    <li class="links-item">
+                      <a
+                        href={servicio.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {servicio.title}
+                      </a>
+                    </li>
+                  ) : (
+                    <li class="links-item">
+                      <a href={`${process.env.PUBLIC_URL}/${servicio.url}`}>
+                        {servicio.title}
+                      </a>
+                    </li>
+                  )}
+                </>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="col-md-3 d-none d-lg-block">
+          <div className="title">Consultas</div>
+          <ul className="links">
+            {consultas.data.map((consulta) => {
+              return (
+                <>
+                  {consulta.external ? (
+                    <li class="links-item">
+                      <a
+                        href={consulta.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {consulta.title}
+                      </a>
+                    </li>
+                  ) : (
+                    <li class="links-item">
+                      <a href={`${process.env.PUBLIC_URL}/${consulta.url}`}>
+                        {consulta.title}
+                      </a>
+                    </li>
+                  )}
+                </>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="col-lg-3">
           <div className="title">Secretaría de Economía</div>
           <p>
-            Municipalidad de Río Cuarto <br />
-            Constitución 980 <br />
-            Córdoba, Argentina.
-          </p>
-        </div>
-        <div className="col-md-3 d-none d-md-block">
-          <div className="title">Deudas y Pagos</div>
-          <p>
-            Patentes <br />
-            Inmobiliario <br />
-            Comercio e Industria. <br />
-            Emos. <br />
-            Planes de Viviendas y Terrenos. <br />
-            Cementerio.
-          </p>
-        </div>
-        <div className="col-md-3 d-none d-md-block">
-          <div className="title">Servicios</div>
-          <p>
-            <a href="/legislacion">Legislación</a> <br />
-            <a href="/medios-de-pago">Medios de Pagos</a> <br />
-            <a href="/contacto">Consultas</a> <br />
-            <a href="/tutoriales">Tutoriales</a> <br />
-            <a
-              href="http://tramites.riocuarto.gov.ar"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Guía de Trámites
-            </a>{" "}
-            <br />
-            <a
-              href="http://cidi.riocuarto.gov.ar/?cidi=5575683555726C625A66587A6172664676544642464D58696A7A733D"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Cedulón Digital
-            </a>{" "}
-            <br />
-          </p>
-        </div>
-        <div className="col-md-3">
-          <div className="title">Seguinos en nuestras redes</div>
-          <p>
-            <a
-              className="text-decoration-none"
-              href="https://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-fw fa-facebook mr-1"></i>
-              <span>Facebook</span>
-            </a>
-            <br />
-            <a
-              className="text-decoration-none "
-              href="https://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-fw fa-instagram mr-1"></i>
-              <span>Instagram</span>
+            Constitución 980. <br />
+            Córdoba, Argentina. <br />
+            <a href="https://www.riocuarto.gov.ar">
+              Municipalidad de Río Cuarto
             </a>
           </p>
+          <div className="title">Seguinos</div>
+          <a
+            className="text-decoration-none mr-3"
+            href="https://google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-fw fa-facebook mr-1"></i>
+            <span>Facebook</span>
+          </a>
+          {/* <br /> */}
+          <a
+            className="text-decoration-none "
+            href="https://google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-fw fa-instagram mr-1"></i>
+            <span>Instagram</span>
+          </a>
         </div>
       </div>
     </div>

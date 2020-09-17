@@ -8,16 +8,39 @@ footer {
   display: flex;
   align-items: center;
 
+  a {
+    color: rgba($primary, 0.8);
+    &:hover {
+      color: rgba($primary, 1);
+    }
+  }
+
   .title {
     margin-bottom: 4px;
     font-weight: 600;
   }
+
+  .links {
+    list-style: none;
+    padding: 0;
+    .links-item {
+      //font-size: 0.9em;
+    }
+  }
 }
 
 @media (max-width: 767px) {
+  // footer {
+  //   text-align: center;
+  //   .title {
+  //     margin-bottom: 8px;
+  //   }
+  // }
+}
+
+@media (max-width: 920px) {
   footer {
     text-align: center;
-
     .title {
       margin-bottom: 8px;
     }
