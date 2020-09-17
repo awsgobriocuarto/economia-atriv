@@ -42,13 +42,13 @@ const Navbar = () => (
             >
               Deudas y Pagos
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {pagos.data.map((pago) => {
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              {pagos.data.map((pago, index) => {
                 return (
-                  <>
+                  <React.Fragment key={index}>
                     {pago.external ? (
                       <a
-                        class="dropdown-item"
+                        className="dropdown-item"
                         href={pago.url}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -57,18 +57,18 @@ const Navbar = () => (
                       </a>
                     ) : (
                       <a
-                        class="dropdown-item"
+                        className="dropdown-item"
                         href={`${process.env.PUBLIC_URL}/${pago.url}`}
                       >
                         {pago.title}
                       </a>
                     )}
-                  </>
+                  </React.Fragment>
                 );
               })}
-              <div class="dropdown-divider"></div>
+              <div className="dropdown-divider"></div>
               <a
-                class="dropdown-item"
+                className="dropdown-item"
                 href={`${process.env.PUBLIC_URL}/deudas-y-pagos`}
                 alt=""
               >
@@ -88,13 +88,13 @@ const Navbar = () => (
             >
               Servicios
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {servicios.data.map((servicio) => {
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              {servicios.data.map((servicio, index) => {
                 return (
-                  <>
+                  <React.Fragment key={index}>
                     {servicio.external ? (
                       <a
-                        class="dropdown-item"
+                        className="dropdown-item"
                         href={servicio.url}
                         alt={servicio.title}
                         target="_blank"
@@ -104,19 +104,19 @@ const Navbar = () => (
                       </a>
                     ) : (
                       <a
-                        class="dropdown-item"
+                        className="dropdown-item"
                         href={process.env.PUBLIC_URL + servicio.url}
                         alt={servicio.title}
                       >
                         {servicio.title}
                       </a>
                     )}
-                  </>
+                  </React.Fragment>
                 );
               })}
-              <div class="dropdown-divider"></div>
+              <div className="dropdown-divider"></div>
               <a
-                class="dropdown-item"
+                className="dropdown-item"
                 href={`${process.env.PUBLIC_URL}/servicios`}
                 alt=""
               >
@@ -136,13 +136,13 @@ const Navbar = () => (
             >
               Consultas
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {consultas.data.map((consulta) => {
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              {consultas.data.map((consulta, index) => {
                 return (
-                  <>
+                  <React.Fragment key={index}>
                     {consulta.external ? (
                       <a
-                        class="dropdown-item"
+                        className="dropdown-item"
                         href={consulta.url}
                         alt={consulta.title}
                         target="_blank"
@@ -152,19 +152,19 @@ const Navbar = () => (
                       </a>
                     ) : (
                       <a
-                        class="dropdown-item"
+                        className="dropdown-item"
                         href={process.env.PUBLIC_URL + consulta.url}
                         alt={consulta.title}
                       >
                         {consulta.title}
                       </a>
                     )}
-                  </>
+                  </React.Fragment>
                 );
               })}
-              <div class="dropdown-divider"></div>
+              <div className="dropdown-divider"></div>
               <a
-                class="dropdown-item"
+                className="dropdown-item"
                 href={`${process.env.PUBLIC_URL}/consultas`}
                 alt=""
               >

@@ -10,11 +10,11 @@ const Footer = (props) => (
         <div className="col-md-3 d-none d-lg-block">
           <div className="title">Deudas y Pagos</div>
           <ul className="links">
-            {pagos.data.map((pago) => {
+            {pagos.data.map((pago, index) => {
               return (
-                <>
+                <React.Fragment key={index}>
                   {pago.external ? (
-                    <li class="links-item">
+                    <li className="links-item">
                       <a
                         href={pago.url}
                         target="_blank"
@@ -24,13 +24,13 @@ const Footer = (props) => (
                       </a>
                     </li>
                   ) : (
-                    <li class="links-item">
+                    <li className="links-item">
                       <a href={`${process.env.PUBLIC_URL}/${pago.url}`}>
                         {pago.title}
                       </a>
                     </li>
                   )}
-                </>
+                </React.Fragment>
               );
             })}
           </ul>
@@ -38,11 +38,11 @@ const Footer = (props) => (
         <div className="col-md-3 d-none d-lg-block">
           <div className="title">Servicios</div>
           <ul className="links">
-            {servicios.data.map((servicio) => {
+            {servicios.data.map((servicio, index) => {
               return (
-                <>
+                <React.Fragment key={index}>
                   {servicio.external ? (
-                    <li class="links-item">
+                    <li className="links-item">
                       <a
                         href={servicio.url}
                         target="_blank"
@@ -52,13 +52,13 @@ const Footer = (props) => (
                       </a>
                     </li>
                   ) : (
-                    <li class="links-item">
+                    <li className="links-item">
                       <a href={`${process.env.PUBLIC_URL}/${servicio.url}`}>
                         {servicio.title}
                       </a>
                     </li>
                   )}
-                </>
+                </React.Fragment>
               );
             })}
           </ul>
@@ -66,11 +66,11 @@ const Footer = (props) => (
         <div className="col-md-3 d-none d-lg-block">
           <div className="title">Consultas</div>
           <ul className="links">
-            {consultas.data.map((consulta) => {
+            {consultas.data.map((consulta, index) => {
               return (
-                <>
+                <React.Fragment key={index}>
                   {consulta.external ? (
-                    <li class="links-item">
+                    <li className="links-item">
                       <a
                         href={consulta.url}
                         target="_blank"
@@ -80,13 +80,13 @@ const Footer = (props) => (
                       </a>
                     </li>
                   ) : (
-                    <li class="links-item">
+                    <li className="links-item">
                       <a href={`${process.env.PUBLIC_URL}/${consulta.url}`}>
                         {consulta.title}
                       </a>
                     </li>
                   )}
-                </>
+                </React.Fragment>
               );
             })}
           </ul>

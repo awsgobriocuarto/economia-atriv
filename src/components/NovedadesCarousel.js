@@ -23,7 +23,7 @@ export default class NovedadesCarousel extends React.Component {
         },
       })
       .then((res) => {
-        console.log(res.data);
+        //console.log(res.data);
         this.setState({
           novedades: res.data,
           isLoading: false,

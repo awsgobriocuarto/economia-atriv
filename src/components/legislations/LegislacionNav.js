@@ -11,16 +11,16 @@ function LegislacionNav(props) {
       role="tablist"
       aria-orientation="vertical"
     >
-      {legislations.map((legislation) => {
+      {legislations.map((legislation, index) => {
         return (
           <a
-            key={legislation.id}
-            className={`nav-link ${legislation.active}`}
+            key={index}
+            className={index === 0 ? "nav-link active" : "nav-link"}
             id="v-pills-home-tab"
             data-toggle="pill"
-            href={`#v-pills-${legislation.id}`}
+            href={`#v-pills-${index}`}
             role="tab"
-            aria-controls={`#v-pills-${legislation.id}`}
+            aria-controls={`#v-pills-${index}`}
             aria-selected="true"
           >
             {legislation.title}

@@ -6,9 +6,9 @@ function LegislacionFileItem(props) {
   const file = props.file;
   return (
     <li>
-      {file.filename}
+      {file.name}
       <a
-        href={file.path}
+        href={file.url}
         target="_blank"
         rel="noopener noreferrer"
         className="btn btn-light"
