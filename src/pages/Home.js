@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PlanDePago from "../components/banners/PlanDePago";
 import Hero from "../components/Hero";
 import Categories from "../components/home/Categories";
 
@@ -9,6 +10,9 @@ class Home extends Component {
         <Hero />
         <section className="home">
           <Categories />
+        </section>
+        <section className="banners">
+          <PlanDePago />
         </section>
       </>
     );

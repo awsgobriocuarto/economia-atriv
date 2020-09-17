@@ -1,5 +1,4 @@
 .carousel {
-  //background-color: white;
   .carousel-indicators {
     li {
       background-color: white;
@@ -7,42 +6,30 @@
   }
   .carousel-control-prev {
     .carousel-control-prev-icon {
-      color: $gray-200;
+      //color: $gray-200;
     }
   }
   .carousel-control-next {
     .carousel-control-next-icon {
-      color: $gray-200;
+      //color: white;
     }
   }
   .carousel-inner {
-    //border: 1px solid white;
-    //border-radius: 4px;
     .carousel-item {
-      height: 316px;
+      height: 210px;
       .carousel-caption {
         color: white;
-        //background-color: rgba(#fff, 0.2);
-
-        height: 256px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .caption-content {
-          //background-color: green;
-          h3 {
-            font-size: 1.6em;
-            font-weight: 600;
-            margin-bottom: 24px;
-          }
-          p {
-            margin-bottom: 16px;
-            font-size: 1.2em;
-          }
-          .btn {
-            margin-bottom: 24px;
-          }
+        h2 {
+          font-size: 1.8em;
+          font-weight: 500;
+          margin-bottom: 24px;
+        }
+        p {
+          margin-bottom: 16px;
+          font-size: 1.2em;
+        }
+        .btn {
+          margin-bottom: 24px;
         }
       }
     }
@@ -53,7 +40,7 @@
   .carousel {
     .carousel-inner {
       .carousel-item {
-        //height: 310px;
+        height: 240px;
         .carousel-caption {
           h3 {
             font-size: 1.4em;

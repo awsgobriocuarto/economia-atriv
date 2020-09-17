@@ -1,0 +1,33 @@
+.banners {
+  background-color: $gray-100;
+  text-align: center;
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+      margin-right: 8px;
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banners {
+    background-color: $gray-100;
+    text-align: center;
+    .buttons {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      flex-direction: column;
+
+      .btn {
+        margin-right: 0px;
+        margin-bottom: 8px;
+        width: 80%;
+      }
+    }
+  }
+}

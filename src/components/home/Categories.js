@@ -6,6 +6,7 @@ import ServicesIcon from "../Icons/ServicesIcon";
 export default function Categories() {
   return (
     <div className="container">
+      <h3 className="mb-4">Realizá tus gestiones online</h3>
       <div className="row justify-content-center">
         <div className="col-md-4 col-lg-3">
           <a

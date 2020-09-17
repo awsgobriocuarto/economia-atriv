@@ -3,16 +3,28 @@
   color: white;
   text-align: center;
   p {
-    margin-bottom: 4px;
+    margin-bottom: 16px;
     font-size: 1.1em;
     font-weight: 300;
-    // text-transform: uppercase;
   }
-  h3 {
+  h4 {
+    font-size: 2.4em;
     margin-bottom: 24px;
     color: $secondary;
   }
-  .btn {
-    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .cta {
+    p {
+      margin-bottom: 16px;
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+    h4 {
+      font-size: 1.8em;
+      margin-bottom: 24px;
+      color: $secondary;
+    }
   }
 }

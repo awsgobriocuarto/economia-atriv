@@ -12,28 +12,26 @@ function CarouselInner(props) {
               className={index === 0 ? "carousel-item active" : "carousel-item"}
             >
               <div className="carousel-caption">
-                <div className="caption-content">
-                  <h3>{item.title}</h3>
-                  {item.link && item.url ? (
+                <h2>{item.title}</h2>
+                {item.link && item.url ? (
+                  <a
+                    href={item.url}
+                    className="btn btn-light"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ir al contenido
+                  </a>
+                ) : (
+                  item.link && (
                     <a
-                      href={item.url}
-                      className="btn btn-outline-light"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={`${process.env.PUBLIC_URL}/novedades/${item.slug}`}
+                      className="btn btn-light"
                     >
-                      Ir al contenido
+                      Quiero saber más
                     </a>
-                  ) : (
-                    item.link && (
-                      <a
-                        href={`${process.env.PUBLIC_URL}/novedades/${item.slug}`}
-                        className="btn btn-outline-light"
-                      >
-                        Quiero saber más
-                      </a>
-                    )
-                  )}
-                </div>
+                  )
+                )}
               </div>
             </div>
           );
