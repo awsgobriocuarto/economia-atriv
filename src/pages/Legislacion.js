@@ -12,7 +12,9 @@ class Legislacion extends Component {
   state = {
     legislations: [],
     isLoading: false,
-    error: null,
+    error: false,
+    errorStatus: null,
+    errorMessage: null,
   };
 
   componentDidMount() {
@@ -26,36 +28,42 @@ class Legislacion extends Component {
         //console.log(res.data);
       })
       .catch((err) => {
-        this.setState({ isLoading: false, error: err.message });
+        this.setState({
+          isLoading: false,
+          error: true,
+          errorStatus: err.response.status,
+          errorMessage: err.message,
+        });
         //console.log(err);
       });
   }
 
   render() {
-    if (this.state.isLoading) {
-      return <Loading />;
-    }
-
-    if (this.state.error) {
-      return <Error error={this.state.error} />;
-    }
-
     return (
       <>
         <Headline title="Servicios" pathGoBack="/consultas" />
-        <section className="legislacion">
-          <div className="container">
-            <h4>Legislacion</h4>
-            <div className="row">
-              <div className="col-sm-5">
-                <LegislacionNav legislations={this.state.legislations} />
-              </div>
-              <div className="col-sm-7">
-                <LegislacionFileList legislations={this.state.legislations} />
+        {this.state.isLoading && <Loading />}
+        {this.state.error && (
+          <Error
+            errorStatus={this.state.errorStatus}
+            errorMessage={this.state.errorMessage}
+          />
+        )}
+        {!this.state.isLoading && !this.state.error && (
+          <section className="legislacion">
+            <div className="container">
+              <h4>Legislacion</h4>
+              <div className="row">
+                <div className="col-sm-5">
+                  <LegislacionNav legislations={this.state.legislations} />
+                </div>
+                <div className="col-sm-7">
+                  <LegislacionFileList legislations={this.state.legislations} />
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
       </>
     );
   }

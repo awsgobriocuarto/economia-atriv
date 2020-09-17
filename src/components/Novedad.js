@@ -6,7 +6,7 @@ export default function Novedad(props) {
   const novedad = props.novedad;
   return (
     <section className="novedad">
-      <div className="row justify-content-center">
+      <div className="row">
         <div className="col-md-10">
           <div className="date">
             <Moment format="DD/MM/YYYY">{novedad.createdAt}</Moment>

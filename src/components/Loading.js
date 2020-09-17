@@ -1,9 +1,10 @@
 import React from "react";
+import BarLoader from "react-spinners/BarLoader";
 
 export default function Loading() {
   return (
-    <div className="text-center py-5">
-      <span className="lead bg-light text-dark">Cargando...</span>
+    <div className="loading">
+      <BarLoader width={80} height={8} color={"#86bae3"} />
     </div>
   );
 }

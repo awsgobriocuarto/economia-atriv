@@ -22,7 +22,8 @@
         h2 {
           font-size: 1.8em;
           font-weight: 500;
-          margin-bottom: 24px;
+          margin: 24px 0;
+          text-shadow: 0 0 8px $primary;
         }
         p {
           margin-bottom: 16px;
@@ -44,6 +45,7 @@
         .carousel-caption {
           h2 {
             font-size: 1.5em;
+            margin: 0;
           }
         }
       }

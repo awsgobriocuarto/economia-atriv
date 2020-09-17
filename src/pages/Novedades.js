@@ -2,13 +2,16 @@ import React, { Component } from "react";
 import Headline from "../components/Headline";
 import axios from "axios";
 import Loading from "../components/Loading";
+import Error from "../components/Error";
 import Novedad from "../components/Novedad";
-import { Redirect } from "react-router-dom";
+
 export default class Novedades extends Component {
   state = {
     novedad: [],
     isLoading: false,
     error: false,
+    errorStatus: null,
+    errorMessage: null,
   };
 
   componentDidMount() {
@@ -18,29 +21,39 @@ export default class Novedades extends Component {
     axios
       .get(apiUrl)
       .then((res) => {
-        console.log(res.data);
-        this.setState({ isLoading: false, novedad: res.data });
+        //console.log(res.data);
+        this.setState({
+          isLoading: false,
+          novedad: res.data,
+        });
       })
       .catch((err) => {
-        console.log(err);
-        this.setState({ isLoading: false, error: true });
+        console.log(err.response.status);
+        console.log(err.message);
+        this.setState({
+          isLoading: false,
+          error: true,
+          errorStatus: err.response.status,
+          errorMessage: err.message,
+        });
       });
   }
   render() {
-    if (this.state.error) {
-      return <Redirect to="/404" />;
-    }
-
     return (
       <>
         <Headline title="Novedades" />
-        <div className="container">
-          {this.state.isLoading ? (
-            <Loading />
-          ) : (
+        {this.state.isLoading && <Loading />}
+        {this.state.error && (
+          <Error
+            errorStatus={this.state.errorStatus}
+            errorMessage={this.state.errorMessage}
+          />
+        )}
+        {!this.state.isLoading && !this.state.error && (
+          <div className="container">
             <Novedad novedad={this.state.novedad} />
-          )}
-        </div>
+          </div>
+        )}
       </>
     );
   }
