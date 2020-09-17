@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAtlas } from "@fortawesome/free-solid-svg-icons";
 
 function LegislacionNav(props) {
   const legislations = props.legislations;
@@ -25,7 +23,7 @@ function LegislacionNav(props) {
           >
             {legislation.title}
             <div className="icon">
-              <FontAwesomeIcon icon={faAtlas} size="lg" fixedWidth />
+              <i className="fas fa-fw fa-lg fa-atlas"></i>
             </div>
           </a>
         );

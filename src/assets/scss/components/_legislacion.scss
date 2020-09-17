@@ -19,8 +19,12 @@
 
       .icon {
         background-color: $gray-200;
-        padding: 6px 5px;
         border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

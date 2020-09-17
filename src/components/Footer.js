@@ -25,7 +25,7 @@ const Footer = (props) => (
                     </li>
                   ) : (
                     <li className="links-item">
-                      <a href={`${process.env.PUBLIC_URL}/${pago.url}`}>
+                      <a href={process.env.PUBLIC_URL + pago.url}>
                         {pago.title}
                       </a>
                     </li>
@@ -53,7 +53,7 @@ const Footer = (props) => (
                     </li>
                   ) : (
                     <li className="links-item">
-                      <a href={`${process.env.PUBLIC_URL}/${servicio.url}`}>
+                      <a href={process.env.PUBLIC_URL + servicio.url}>
                         {servicio.title}
                       </a>
                     </li>
@@ -81,7 +81,7 @@ const Footer = (props) => (
                     </li>
                   ) : (
                     <li className="links-item">
-                      <a href={`${process.env.PUBLIC_URL}/${consulta.url}`}>
+                      <a href={process.env.PUBLIC_URL + consulta.url}>
                         {consulta.title}
                       </a>
                     </li>
