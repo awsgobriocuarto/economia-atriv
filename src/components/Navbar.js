@@ -66,6 +66,14 @@ const Navbar = () => (
                   </>
                 );
               })}
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href={`${process.env.PUBLIC_URL}/deudas-y-pagos`}
+                alt=""
+              >
+                Ver todo
+              </a>
             </div>
           </li>
           <li className="nav-item dropdown">
@@ -106,6 +114,14 @@ const Navbar = () => (
                   </>
                 );
               })}
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href={`${process.env.PUBLIC_URL}/servicios`}
+                alt=""
+              >
+                Ver todo
+              </a>
             </div>
           </li>
           <li className="nav-item dropdown">
@@ -146,6 +162,14 @@ const Navbar = () => (
                   </>
                 );
               })}
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href={`${process.env.PUBLIC_URL}/consultas`}
+                alt=""
+              >
+                Ver todo
+              </a>
             </div>
           </li>
           <li className="nav-item">
