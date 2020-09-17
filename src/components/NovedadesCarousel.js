@@ -2,12 +2,15 @@ import React from "react";
 import CarouselIndicators from "./CarouselIndicators";
 import CarouselControls from "./CarouselControls";
 import CarouselInner from "./CarouselInner";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
 import axios from "axios";
 
 export default class NovedadesCarousel extends React.Component {
   state = {
     novedades: [],
     isLoading: false,
+    error: null,
   };
 
   componentDidMount() {
@@ -30,12 +33,25 @@ export default class NovedadesCarousel extends React.Component {
         });
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
+        this.setState({
+          isLoading: false,
+          error: err.message,
+        });
       });
   }
   render() {
     const items = this.state.novedades;
     const count = items.length;
+
+    if (this.state.isLoading) {
+      return <Loading />;
+    }
+
+    if (this.state.error) {
+      return <Error error={this.state.error} />;
+    }
+
     return (
       <>
         <div
