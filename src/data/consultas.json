@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "title": "legislacion",
+      "title": "Legislacion",
       "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
       "icon": "fas fa-3x fa-balance-scale",
       "url": "/legislacion",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "title": "medios de pago",
+      "title": "Medios de Pago",
       "summary": "Conocé todos los medios en donde podés realizar los pagos de impuestos municipales.",
       "icon": "far fa-3x fa-credit-card",
       "url": "/medios-de-pago",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "title": "contacto",
+      "title": "Contacto",
       "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
       "icon": "far fa-3x fa-envelope",
       "url": "/contacto",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "title": "tutoriales",
+      "title": "Tutoriales",
       "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
       "icon": "far fa-3x fa-play-circle",
       "url": "/tutoriales",

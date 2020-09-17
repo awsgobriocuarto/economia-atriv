@@ -7,7 +7,7 @@ export default function Categories() {
   return (
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col-md-3">
+        <div className="col-md-4 col-lg-3">
           <a
             href={`${process.env.PUBLIC_URL}/deudas-y-pagos`}
             className="btn btn-light btn-home"
@@ -18,7 +18,7 @@ export default function Categories() {
             <div className="title">Deudas y Pagos</div>
           </a>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4 col-lg-3">
           <a
             href={`${process.env.PUBLIC_URL}/servicios`}
             className="btn btn-light btn-home"
@@ -29,7 +29,7 @@ export default function Categories() {
             <div className="title">Servicios</div>
           </a>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4 col-lg-3">
           <a
             href={`${process.env.PUBLIC_URL}/consultas`}
             className="btn btn-light btn-home"

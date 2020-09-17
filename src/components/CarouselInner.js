@@ -21,7 +21,7 @@ function CarouselInner(props) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      ir al contenido
+                      Ir al contenido
                     </a>
                   ) : (
                     item.link && (
@@ -29,7 +29,7 @@ function CarouselInner(props) {
                         href={`${process.env.PUBLIC_URL}/novedades/${item.slug}`}
                         className="btn btn-outline-light"
                       >
-                        más información
+                        Quiero saber más
                       </a>
                     )
                   )}

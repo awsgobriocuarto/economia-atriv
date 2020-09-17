@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "title": "servicios por contribución",
+      "title": "Servicios por Contribución",
       "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
       "icon": "far fa-3x fa-user",
       "url": "/contribuyentes",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "title": "guía de trámites",
+      "title": "Guía de Trámites",
       "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
       "icon": "fas fa-3x fa-list-ol",
       "url": "http://tramites.riocuarto.gov.ar/",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "title": "cedulón digital",
+      "title": "Cedulón Digital",
       "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
       "icon": "far fa-3x fa-file-alt",
       "url": "http://cidi.riocuarto.gov.ar/?cidi=5575683555726C625A66587A6172664676544642464D58696A7A733D",
