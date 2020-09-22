@@ -22,13 +22,23 @@ class CalendarioList extends Component {
     axios
       .get(apiUrl, {
         params: {
-          _limit: 4
+          //_limit: 4
         }
       })
       .then((res) => {
+        const newList = res.data.sort((a, b) => {
+          if (a.fecha > b.fecha) {
+            return 1;
+          }
+          if (a.fecha < b.fecha) {
+            return -1;
+          }
+          return 0;
+        });
+        console.log(newList);
         this.setState({
           isLoading: false,
-          events: res.data,
+          events: newList,
           total: res.data.length
         });
       })
@@ -47,7 +57,7 @@ class CalendarioList extends Component {
       <>
         <div className='calendar'>
           <div className='container'>
-            <h5>Calendarios de Vencimientos</h5>
+            <h5>Próximos Vencimientos</h5>
             {this.state.isLoading && <Loading />}
             {this.state.error && (
               <Error
@@ -60,7 +70,10 @@ class CalendarioList extends Component {
             </div>
             {this.state.total === 4 ? (
               <div className='text-center'>
-                <Link className='btn btn-outline-primary mt-3' to=''>
+                <Link
+                  className='btn btn-outline-primary mt-3'
+                  to='/vencimientos'
+                >
                   Ver mas vencimientos
                 </Link>
               </div>
