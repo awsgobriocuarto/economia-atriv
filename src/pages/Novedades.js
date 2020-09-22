@@ -21,7 +21,6 @@ export default class Novedades extends Component {
     axios
       .get(apiUrl)
       .then((res) => {
-        //console.log(res.data);
         this.setState({
           isLoading: false,
           novedad: res.data

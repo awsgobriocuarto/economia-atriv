@@ -1,57 +1,75 @@
-import React, { Component } from "react";
-import CalendarioItem from "./CalendarioItem";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import CalendarioItem from './CalendarioItem';
+import Loading from '../components/Loading';
+import Error from '../components/Error';
 
-const events = [
-  {
-    id: 1,
-    tribute: "inmobiliario",
-    description: "revalúo",
-    date: "2020-08-15",
-    url:
-      "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Inmo",
-  },
-  {
-    id: 2,
-    tribute: "automotor",
-    description: "pago",
-    date: "2020-08-22",
-    url:
-      "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Pate",
-  },
-  {
-    id: 3,
-    tribute: "comercio e industria",
-    description: "actualizacion",
-    date: "2020-08-23",
-    url: "http://urltributo.com",
-  },
-  {
-    id: 4,
-    tribute: "monotributo unificado",
-    description: "pago",
-    date: "2020-08-27",
-    url: "",
-  },
-];
+import axios from 'axios';
 
 class CalendarioList extends Component {
-  constructor(props) {
-    super(props);
+  state = {
+    events: [],
+    total: 0,
+    isLoading: false,
+    error: false,
+    errorStatus: null,
+    errorMessage: null
+  };
 
-    this.state = {};
+  componentDidMount() {
+    this.setState({ isLoading: true });
+    const apiUrl = 'http://localhost:1337/vencimientos';
+    axios
+      .get(apiUrl, {
+        params: {
+          _limit: 4
+        }
+      })
+      .then((res) => {
+        this.setState({
+          isLoading: false,
+          events: res.data,
+          total: res.data.length
+        });
+      })
+      .catch((err) => {
+        this.setState({
+          isLoading: false,
+          error: true,
+          errorStatus: err.response.status,
+          errorMessage: err.message
+        });
+      });
   }
 
   render() {
     return (
-      <div className="calendar">
-        <div className="container">
-          <h5>Calendarios de Vencimientos</h5>
-          <div className="row mt-5">
-            {}
-            <CalendarioItem events={events} />
+      <>
+        <div className='calendar'>
+          <div className='container'>
+            <h5>Calendarios de Vencimientos</h5>
+            {this.state.isLoading && <Loading />}
+            {this.state.error && (
+              <Error
+                errorStatus={this.state.errorStatus}
+                errorMessage={this.state.errorMessage}
+              />
+            )}
+            <div className='row mt-5'>
+              <CalendarioItem events={this.state.events} />
+            </div>
+            {this.state.total === 4 ? (
+              <div className='text-center'>
+                <Link className='btn btn-outline-primary mt-3' to=''>
+                  Ver mas vencimientos
+                </Link>
+              </div>
+            ) : (
+              ''
+            )}
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

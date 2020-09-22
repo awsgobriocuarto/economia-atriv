@@ -1,5 +1,5 @@
-import React from "react";
-import moment from "moment";
+import React from 'react';
+import moment from 'moment';
 
 export default function CalendarioItem(props) {
   const events = props.events;
@@ -7,21 +7,23 @@ export default function CalendarioItem(props) {
     <>
       {events.map((event) => {
         return (
-          <div key={event.id} className="col-md-3">
-            <div className="card">
-              <div className="card-body">
-                <div className="calendar-date">
-                  {moment(event.date).format("MM/DD")}
+          <div key={event.id} className='col-md-3'>
+            <div className='card'>
+              <div className='card-body'>
+                <div className='calendar-date'>
+                  {moment(event.fecha).format('DD/MM')}
                 </div>
-                <div className="calendar-tribute">{event.tribute}</div>
-                <div className="calendar-description">{event.description}</div>
+                <div className='calendar-tribute'>{event.titulo}</div>
+                <div className='calendar-description'>
+                  {event.descripcion ? event.descripcion : '-'}
+                </div>
                 <a
                   href={event.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className={
-                    "btn " +
-                    (event.url.length ? "btn-primary" : "btn-primary disabled")
+                    'btn ' +
+                    (event.url.length ? 'btn-primary' : 'btn-primary disabled')
                   }
                   disable={event.url}
                 >

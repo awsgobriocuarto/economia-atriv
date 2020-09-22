@@ -4,19 +4,23 @@
   .card {
     margin-bottom: 30px;
     text-align: center;
+    // height: 260px;
   }
 
   .calendar-date {
     font-size: 2em;
     font-weight: 700;
-    margin-bottom: 12px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .calendar-tribute {
-    font-size: 1.3em;
-    line-height: 1.3em;
+    font-size: 1.4em;
+    line-height: 1.1em;
     height: 60px;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    // margin-bottom: 8px;
 
     display: flex;
     align-items: center;
@@ -26,5 +30,9 @@
     color: $secondary;
     margin-bottom: 24px;
     text-transform: uppercase;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
