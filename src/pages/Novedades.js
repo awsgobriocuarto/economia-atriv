@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Headline from "../components/Headline";
-import axios from "axios";
-import Loading from "../components/Loading";
-import Error from "../components/Error";
-import Novedad from "../components/Novedad";
+import React, { Component } from 'react';
+import Headline from '../components/Headline';
+import axios from 'axios';
+import Loading from '../components/Loading';
+import Error from '../components/Error';
+import Novedad from '../components/Novedad';
 
 export default class Novedades extends Component {
   state = {
@@ -11,7 +11,7 @@ export default class Novedades extends Component {
     isLoading: false,
     error: false,
     errorStatus: null,
-    errorMessage: null,
+    errorMessage: null
   };
 
   componentDidMount() {
@@ -24,7 +24,7 @@ export default class Novedades extends Component {
         //console.log(res.data);
         this.setState({
           isLoading: false,
-          novedad: res.data,
+          novedad: res.data
         });
       })
       .catch((err) => {
@@ -34,14 +34,14 @@ export default class Novedades extends Component {
           isLoading: false,
           error: true,
           errorStatus: err.response.status,
-          errorMessage: err.message,
+          errorMessage: err.message
         });
       });
   }
   render() {
     return (
       <>
-        <Headline title="Novedades" />
+        <Headline title='Novedades' />
         {this.state.isLoading && <Loading />}
         {this.state.error && (
           <Error
@@ -50,7 +50,7 @@ export default class Novedades extends Component {
           />
         )}
         {!this.state.isLoading && !this.state.error && (
-          <div className="container">
+          <div className='container'>
             <Novedad novedad={this.state.novedad} />
           </div>
         )}

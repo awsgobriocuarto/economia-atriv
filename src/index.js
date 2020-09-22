@@ -1,15 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./routes/App";
-import * as serviceWorker from "./serviceWorker";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './routes/App';
+import * as serviceWorker from './serviceWorker';
 
-import "../node_modules/bootstrap/dist/js/bootstrap";
+import '../node_modules/bootstrap/dist/js/bootstrap';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("app-root")
+  document.getElementById('app-root')
 );
 
 // If you want your app to work offline and load faster, you can change
