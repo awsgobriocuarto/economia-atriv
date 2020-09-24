@@ -18,7 +18,7 @@ class CalendarioList extends Component {
 
   componentDidMount() {
     this.setState({ isLoading: true });
-    const apiUrl = 'http://localhost:1337/vencimientos';
+    const apiUrl = 'https://atriv.herokuapp.com/vencimientos';
     axios
       .get(apiUrl, {
         params: {
