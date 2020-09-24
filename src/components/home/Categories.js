@@ -23,7 +23,7 @@ export default function Categories() {
         </div>
         <div className='col-md-4 col-lg-3'>
           <Link
-            href={`/servicios`}
+            to={`/servicios`}
             className='btn btn-light btn-home'
             title='servicios'
           >
