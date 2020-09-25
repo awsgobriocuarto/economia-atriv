@@ -18,6 +18,7 @@ import Contacto from '../pages/Contacto';
 import Tutoriales from '../pages/Tutoriales';
 import Consultas from '../pages/Consultas';
 import Contribuyentes from '../pages/Contribuyentes';
+import Calendar from '../pages/Calendar';
 
 import '../assets/scss/styles.scss';
 import analytics from '../utils/analytics';
@@ -50,6 +51,7 @@ function Routes() {
       <Route exact path='/contribuyentes' component={Contribuyentes} />
       <Route exact path='/tutoriales' component={Tutoriales} />
       <Route exact path='/novedades/:slug' component={Novedades} />
+      <Route exact path='/vencimientos' component={Calendar} />
       <Route path='*' component={NotFound} />
     </Switch>
   );

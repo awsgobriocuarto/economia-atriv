@@ -4,10 +4,12 @@ import CalendarioItem from './CalendarioItem';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
 
+import moment from 'moment';
 import axios from 'axios';
 
 class CalendarioList extends Component {
   state = {
+    today: moment().format('YYYY-MM-DD'),
     events: [],
     total: 0,
     isLoading: false,
@@ -18,27 +20,13 @@ class CalendarioList extends Component {
 
   componentDidMount() {
     this.setState({ isLoading: true });
-    const apiUrl = 'https://atriv.herokuapp.com/vencimientos';
+    const apiUrl = `https://atriv.herokuapp.com/vencimientos?_sort=fecha:ASC&_limit=4&fecha_gte=${this.state.today}`;
     axios
-      .get(apiUrl, {
-        params: {
-          //_limit: 4
-        }
-      })
+      .get(apiUrl)
       .then((res) => {
-        const newList = res.data.sort((a, b) => {
-          if (a.fecha > b.fecha) {
-            return 1;
-          }
-          if (a.fecha < b.fecha) {
-            return -1;
-          }
-          return 0;
-        });
-        console.log(newList);
         this.setState({
           isLoading: false,
-          events: newList,
+          events: res.data,
           total: res.data.length
         });
       })
@@ -55,7 +43,7 @@ class CalendarioList extends Component {
   render() {
     return (
       <>
-        <div className='calendar'>
+        <div className='calendar max'>
           <div className='container'>
             <h5>Próximos Vencimientos</h5>
             {this.state.isLoading && <Loading />}

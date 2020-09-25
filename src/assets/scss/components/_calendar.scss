@@ -1,38 +1,112 @@
 .calendar {
   background-color: $gray-100;
+  &.max {
+    .card {
+      margin-bottom: 30px;
+      text-align: center;
+      // height: 260px;
+    }
 
-  .card {
-    margin-bottom: 30px;
-    text-align: center;
-    // height: 260px;
-  }
+    .calendar-date {
+      font-size: 2em;
+      font-weight: 700;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .calendar-tribute {
+      font-size: 1.4em;
+      line-height: 1.1em;
+      height: 60px;
+      text-transform: uppercase;
+      // margin-bottom: 8px;
 
-  .calendar-date {
-    font-size: 2em;
-    font-weight: 700;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .calendar-description {
+      color: $secondary;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
-  .calendar-tribute {
-    font-size: 1.4em;
-    line-height: 1.1em;
-    height: 60px;
-    text-transform: uppercase;
-    // margin-bottom: 8px;
+  &.min {
+    background-color: white;
+    .card {
+      //background-color: red;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .calendar-description {
-    color: $secondary;
-    margin-bottom: 24px;
-    text-transform: uppercase;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      .calendar-date {
+        width: 35%;
+        text-align: center;
+        background-color: lighten($primary, 10%);
+        color: lighten($primary, 10%);
+        &.par {
+          // background-color: $success;
+          // color: $success;
+        }
+        .calendar-date-day {
+          padding-top: 8px;
+          font-size: 4rem;
+          line-height: 6.2rem;
+          font-weight: 600;
+          background-color: rgba($white, 0.94);
+        }
+        .calendar-date-month {
+          padding: 8px 0 4px 0;
+          background-color: rgba($gray-900, 0.1);
+          color: white;
+          line-height: 1.8rem;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+        .calendar-date-year {
+          padding: 4px 0;
+          font-size: 0.94rem;
+          line-height: 1.8rem;
+          background-color: rgba($gray-900, 0.6);
+          color: white;
+        }
+      }
+      .calendar-body {
+        width: 65%;
+        padding: 0 16px;
+        text-align: center;
+        //background-color: orange;
+        .calendar-expire {
+          //font-size: 0.8rem;
+          margin-bottom: 16px;
+          .badge {
+            font-weight: 400;
+          }
+        }
+        .calendar-tribute {
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 1.2rem;
+          padding-top: 4px;
+          margin-bottom: 0px;
+          letter-spacing: -0.04rem;
+        }
+        .calendar-description {
+          text-transform: uppercase;
+          margin-bottom: 4px;
+          color: $gray-600;
+        }
+        .btn {
+          margin-bottom: 0px;
+        }
+      }
+    }
   }
 }

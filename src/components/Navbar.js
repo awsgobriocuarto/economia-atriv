@@ -175,6 +175,12 @@ const Navbar = () => (
             </div>
           </li>
           <li className='nav-item'>
+            <Link className='nav-link' to='/vencimientos'>
+              <i className='far fa-calendar-alt'></i>
+              <span className='ml-1 d-sm-none'>Vencimientos</span>
+            </Link>
+          </li>
+          <li className='nav-item'>
             <Link className='nav-link' to='/contacto'>
               <i className='fas fa-envelope'></i>
               <span className='ml-1 d-sm-none'>Contacto</span>

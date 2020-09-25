@@ -5,6 +5,10 @@ import * as serviceWorker from './serviceWorker';
 
 import '../node_modules/bootstrap/dist/js/bootstrap';
 
+import moment from 'moment';
+import locale from 'moment/locale/es';
+moment.updateLocale('es', locale);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

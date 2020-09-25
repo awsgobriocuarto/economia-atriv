@@ -10,10 +10,10 @@ export default function CalendarioItem(props) {
           <div key={event.id} className='col-md-3'>
             <div className='card'>
               <div className='card-body'>
+                <div className='calendar-tribute'>{event.titulo}</div>
                 <div className='calendar-date'>
                   {moment(event.fecha).format('DD/MM')}
                 </div>
-                <div className='calendar-tribute'>{event.titulo}</div>
                 <div className='calendar-description'>
                   {event.descripcion ? event.descripcion : '-'}
                 </div>
