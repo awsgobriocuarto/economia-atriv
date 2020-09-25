@@ -39,9 +39,10 @@ export default class CalendarItem extends Component {
                 <div className='calendar-expire'>
                   <div
                     className={
-                      moment(event.fecha).format('DDDD') -
-                        moment(this.state.today).format('DDDD') >
-                      '20'
+                      Math.abs(
+                        moment(event.fecha).format('DDDD') -
+                          moment(this.state.today).format('DDDD')
+                      ) > '15'
                         ? 'badge badge-primary'
                         : 'badge badge-danger'
                     }
