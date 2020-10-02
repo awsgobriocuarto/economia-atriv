@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Legislacion",
-      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "summary": "",
       "icon": "fas fa-3x fa-balance-scale",
       "url": "/legislacion",
       "external": false
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Medios de Pago",
-      "summary": "Conocé todos los medios en donde podés realizar los pagos de impuestos municipales.",
+      "summary": "",
       "icon": "far fa-3x fa-credit-card",
       "url": "/medios-de-pago",
       "external": false
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "title": "Contacto",
-      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "summary": "",
       "icon": "far fa-3x fa-envelope",
       "url": "/contacto",
       "external": false
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "title": "Tutoriales",
-      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem voluptates.",
+      "summary": "",
       "icon": "far fa-3x fa-play-circle",
       "url": "/tutoriales",
       "external": false

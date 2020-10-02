@@ -24,7 +24,9 @@
         box-shadow: 0px 4px 16px rgba($primary, 0.2);
       }
       .item-icon {
-        background-color: rgba($secondary, 0.14);
+        //background-color: rgba($secondary, 0.14);
+        background-color: $info;
+        color: white;
         width: 100px;
         height: 100px;
         border-radius: 50%;

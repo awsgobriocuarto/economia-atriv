@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Navbar from "./Navbar";
-import Cta0800 from "./Cta0800";
-import Footer from "./Footer";
+import Navbar from './Navbar';
+import Cta0800 from './Cta0800';
+import Footer from './Footer';
 
 function Layout(props) {
   return (

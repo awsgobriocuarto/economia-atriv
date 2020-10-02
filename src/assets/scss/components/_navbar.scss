@@ -18,6 +18,15 @@
         letter-spacing: -0.02em;
       }
     }
+    .dropdown-menu {
+      .dropdown-item {
+        .fas {
+          color: $gray-400;
+          margin-left: 4px;
+          font-size: 0.9rem;
+        }
+      }
+    }
   }
 }
 

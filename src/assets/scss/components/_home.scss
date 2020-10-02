@@ -9,11 +9,11 @@
     &:hover {
       box-shadow: 0px 4px 16px rgba($primary, 0.3);
       .icon {
-        color: rgba($primary, 1);
+        color: rgba($success, 1);
       }
     }
     .icon {
-      color: rgba($primary, 0.9);
+      color: rgba($primary, 0.8);
       margin-bottom: 16px;
       svg {
         width: 68px;

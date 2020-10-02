@@ -54,7 +54,7 @@ const Navbar = () => (
                         target='_blank'
                         rel='noopener noreferrer'
                       >
-                        {pago.title}
+                        {pago.title} <i className='fas fa-share'></i>
                       </a>
                     ) : (
                       <Link
@@ -102,7 +102,7 @@ const Navbar = () => (
                         target='_blank'
                         rel='noopener noreferrer'
                       >
-                        {servicio.title}
+                        {servicio.title} <i className='fas fa-share'></i>
                       </a>
                     ) : (
                       <Link
@@ -150,7 +150,7 @@ const Navbar = () => (
                         target='_blank'
                         rel='noopener noreferrer'
                       >
-                        {consulta.title}
+                        {consulta.title} <i className='fas fa-share'></i>
                       </a>
                     ) : (
                       <Link

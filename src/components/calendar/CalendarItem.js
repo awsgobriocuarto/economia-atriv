@@ -32,9 +32,7 @@ export default class CalendarItem extends Component {
               <div className='calendar-body'>
                 <div className='calendar-tribute'>{event.titulo}</div>
                 <div className='calendar-description'>
-                  {event.descripcion
-                    ? `- ${event.descripcion} -`
-                    : '- reavaluo -'}
+                  {event.descripcion ? `- ${event.descripcion} -` : '-'}
                 </div>
                 <div className='calendar-expire'>
                   <div
