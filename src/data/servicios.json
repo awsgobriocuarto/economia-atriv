@@ -4,15 +4,15 @@
       "id": 1,
       "title": "Servicios por Contribución",
       "summary": "",
-      "icon": "far fa-3x fa-user",
-      "url": "/contribuyentes",
+      "icon": "fas fa-3x fa-users-cog",
+      "url": "/servicios-por-contribucion",
       "external": false
     },
     {
       "id": 2,
       "title": "Guía de Trámites",
       "summary": "",
-      "icon": "fas fa-3x fa-list-ol",
+      "icon": "fas fa-3x fa-book",
       "url": "http://tramites.riocuarto.gov.ar/",
       "external": true
     },

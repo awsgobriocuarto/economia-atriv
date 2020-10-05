@@ -95,7 +95,7 @@ const Footer = (props) => (
         <div className='col-lg-3'>
           <div className='title'>Secretaría de Economía</div>
           <p>
-            Constitución 980. <br />
+            Constitución 988. <br />
             Córdoba, Argentina. <br />
             <a href='https://www.riocuarto.gov.ar'>
               Municipalidad de Río Cuarto
@@ -104,7 +104,7 @@ const Footer = (props) => (
           <div className='title'>Seguinos</div>
           <a
             className='text-decoration-none mr-3'
-            href='https://google.com'
+            href='https://www.facebook.com/economiarioiv/'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -114,12 +114,12 @@ const Footer = (props) => (
           {/* <br /> */}
           <a
             className='text-decoration-none '
-            href='https://google.com'
+            href='https://www.youtube.com/channel/UCBdsSS0fALXiKbRofATXYHQ'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <i className='fab fa-fw fa-instagram mr-1'></i>
-            <span>Instagram</span>
+            <i className='fab fa-fw fa-youtube mr-1'></i>
+            <span>Youtube</span>
           </a>
         </div>
       </div>

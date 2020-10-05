@@ -1,7 +1,7 @@
 import ReactGA from 'react-ga';
 
 // const TRACKING_ID = 'UA-18535147-4';
-const TRACKING_ID = 'UA-00000000-0';
+const TRACKING_ID = 'UA-20054145-3';
 
 function init() {
   // Enable debug mode on the local development environment

@@ -188,7 +188,7 @@ const Navbar = () => (
           </li>
           <li className='nav-item'>
             <a
-              href='https://google.com'
+              href='https://www.facebook.com/economiarioiv/'
               className='nav-link'
               target='_blank'
               rel='noopener noreferrer'
@@ -199,13 +199,13 @@ const Navbar = () => (
           </li>
           <li className='nav-item'>
             <a
-              href='https://google.com'
+              href='https://www.youtube.com/channel/UCBdsSS0fALXiKbRofATXYHQ'
               className='nav-link'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <i className='fab fa-instagram'></i>
-              <span className='ml-1 d-sm-none'>Instagram</span>
+              <i className='fab fa-youtube'></i>
+              <span className='ml-1 d-sm-none'>Youtube</span>
             </a>
           </li>
         </ul>

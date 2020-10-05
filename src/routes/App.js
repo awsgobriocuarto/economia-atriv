@@ -48,7 +48,11 @@ function Routes() {
       <Route exact path='/medios-de-pago' component={MediosDePago} />
       <Route exact path='/contacto' component={Contacto} />
       <Route exact path='/consultas' component={Consultas} />
-      <Route exact path='/contribuyentes' component={Contribuyentes} />
+      <Route
+        exact
+        path='/servicios-por-contribucion'
+        component={Contribuyentes}
+      />
       <Route exact path='/tutoriales' component={Tutoriales} />
       <Route exact path='/novedades/:slug' component={Novedades} />
       <Route exact path='/vencimientos' component={Calendar} />

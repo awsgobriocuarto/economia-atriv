@@ -17,6 +17,7 @@ import LogoCredicoop from '../assets/statics/mdp-credicoop.png';
 import LogoBancoCiudad from '../assets/statics/mdp-banco-ciudad.png';
 import LogoCobroExpress from '../assets/statics/mdp-cobro-express.png';
 import LogoRapipago from '../assets/statics/mdp-rapipago.png';
+import { Link } from 'react-router-dom';
 
 class MediosDePago extends Component {
   state = {
@@ -108,16 +109,39 @@ class MediosDePago extends Component {
             </div>
             <div className='row medios-pagos-cta'>
               <div className='col-md-6'>
-                <div className='btn btn-lg btn-cta'>Ir a Pagos Online</div>
+                {/* <div className='btn btn-lg btn-cta'>Ir a Pagos Online</div> */}
+                <Link
+                  to='/deudas-y-pagos'
+                  className='btn btn-lg btn-cta'
+                  alt='deudas y pagos'
+                >
+                  Ir a Pagos Online
+                </Link>
               </div>
               <div className='col-md-6 help'>
-                <button
+                {/* <button
                   type='button'
                   className='btn btn-link'
                   onClick={this.handleOpenModal}
                 >
                   ¿Cómo puedo pagar Online?
-                </button>
+                </button> */}
+                {/* <Link
+                  to='/tutoriales'
+                  className='btn btn-link'
+                  alt='pagar online'
+                >
+                  ¿Cómo puedo pagar Online?
+                </Link> */}
+                <a
+                  className='btn btn-link'
+                  href='https://www.youtube.com/watch?v=VeEphtTb0Cs'
+                  target='_blank'
+                  alt='como puedo pagar online'
+                  rel='noopener noreferrer'
+                >
+                  ¿Cómo puedo pagar Online?
+                </a>
                 <Modal
                   isOpen={this.state.modalIsOpen}
                   onCloseModal={this.handleCloseModal}
