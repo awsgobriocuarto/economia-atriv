@@ -9,7 +9,7 @@ function Cta0800() {
           <div className='row justify-content-center'>
             <div className='col-lg-6'>
               <h3>Comunicate con nosotros</h3>
-              <p>De lunes a viernes de 7.30 a 13.30hs.</p>
+              <p>De lunes a viernes de 7.30 a 15hs.</p>
               <h4>
                 0800 444 5454 <small>(opción 3)</small>
               </h4>

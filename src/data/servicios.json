@@ -23,6 +23,14 @@
       "icon": "far fa-3x fa-file-alt",
       "url": "http://cidi.riocuarto.gov.ar/?cidi=5575683555726C625A66587A6172664676544642464D58696A7A733D",
       "external": true
+    },
+    {
+      "id": 3,
+      "title": "Turnos Web",
+      "summary": "",
+      "icon": "far fa-3x fa-calendar-alt",
+      "url": "https://admin.toteminsight.com/progressiveApp/5f04b1401320d01ab4a513f6/index.jade",
+      "external": true
     }
   ]
 }
