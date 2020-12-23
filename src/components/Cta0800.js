@@ -13,7 +13,6 @@ function Cta0800() {
     axios
       .get(apiURL)
       .then((res) => {
-        console.log(res.data);
         setTexts(res.data);
       })
       .catch((err) => {
