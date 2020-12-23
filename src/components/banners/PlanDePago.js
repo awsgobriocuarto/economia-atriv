@@ -26,6 +26,8 @@ export default function PlanDePago() {
             <a
               href='https://admin.toteminsight.com/progressiveApp/5f04b1401320d01ab4a513f6/index.jade'
               className='btn btn-primary'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <i className='fas fa-calendar-alt mr-1'></i> Turnos Web
             </a>
