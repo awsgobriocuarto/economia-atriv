@@ -56,7 +56,7 @@ export default class NovedadesCarousel extends React.Component {
       <>
         <div
           id="carouselSlides"
-          className="carousel slide"
+          className="carousel slide novedades"
           data-ride="carousel"
         >
           {count > 1 && <CarouselIndicators items={items} count={count} />}

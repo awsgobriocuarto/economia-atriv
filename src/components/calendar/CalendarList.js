@@ -1,25 +1,25 @@
-import React, { Component } from 'react';
-import Loading from '../../components/Loading';
-import Error from '../../components/Error';
+import React, { Component } from "react";
+import Loading from "../../components/Loading";
+import Error from "../../components/Error";
 
-import moment from 'moment';
-import axios from 'axios';
-import CalendarItem from './CalendarItem';
+import moment from "moment";
+import axios from "axios";
+import CalendarItem from "./CalendarItem";
 
 class CalendarList extends Component {
   state = {
-    today: moment().format('YYYY-MM-DD'),
+    today: moment().format("YYYY-MM-DD"),
     events: [],
     total: 0,
     isLoading: false,
     error: false,
     errorStatus: null,
-    errorMessage: null
+    errorMessage: null,
   };
 
   componentDidMount() {
     this.setState({
-      isLoading: true
+      isLoading: true,
     });
 
     const apiUrl = `https://atriv.herokuapp.com/vencimientos?_sort=fecha:ASC&fecha_gte=${this.state.today}`;
@@ -29,7 +29,7 @@ class CalendarList extends Component {
         this.setState({
           isLoading: false,
           events: res.data,
-          total: res.data.length
+          total: res.data.length,
         });
       })
       .catch((err) => {
@@ -37,7 +37,7 @@ class CalendarList extends Component {
           isLoading: false,
           error: true,
           errorStatus: err.response.status,
-          errorMessage: err.message
+          errorMessage: err.message,
         });
       });
   }
@@ -53,7 +53,7 @@ class CalendarList extends Component {
           />
         )}
         <>
-          <div className='row calendar min'>
+          <div className="row calendar min">
             <CalendarItem events={this.state.events} />
           </div>
         </>
