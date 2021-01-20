@@ -14,8 +14,8 @@ export default function PlanDePago() {
             <a href='tel:08004445454' className='btn btn-primary'>
               <i className='fas fa-phone-alt'></i> Llamar al 0800 444 5454
             </a>
-            <a href='https://wa.me/+5493584834396' className='btn btn-success'>
-              <i className='fab fa-whatsapp'></i> +54 9 358 483 4396
+            <a href='https://wa.me/+5493584121879' className='btn btn-success'>
+              <i className='fab fa-whatsapp'></i> +54 9 358 412 1879
             </a>
             <a href='https://wa.me/+5493585148212' className='btn btn-success'>
               <i className='fab fa-whatsapp'></i> +54 9 358 514 8212
