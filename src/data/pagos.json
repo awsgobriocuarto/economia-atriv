@@ -5,7 +5,7 @@
       "title": "Patentes",
       "summary": "Utilizá este medio para consultar o pagar tus patentes.",
       "icon": "fas fa-3x fa-car",
-      "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Pate",
+      "url": "https://app.riocuarto.gov.ar:8443/gestiontributaria/servlet/com.recursos.hceduimpmul?Pate",
       "external": true
     },
     {
@@ -13,7 +13,7 @@
       "title": "Inmobiliario",
       "summary": "Utilizá este medio para consultar o pagar tus impuestos inmobiliarios.",
       "icon": "fas fa-3x fa-home",
-      "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Inmo",
+      "url": "https://app.riocuarto.gov.ar:8443/gestiontributaria/servlet/com.recursos.hceduimpmul?Inmo",
       "external": true
     },
     {
@@ -21,7 +21,7 @@
       "title": "Comercio / Industria",
       "summary": "Utilizá este medio para consultar o pagar tus impuestos tributarios.",
       "icon": "fas fa-3x fa-industry",
-      "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Come",
+      "url": "https://app.riocuarto.gov.ar:8443/gestiontributaria/servlet/com.recursos.hceduimpmul?Come",
       "external": true
     },
     {
@@ -37,7 +37,7 @@
       "title": "Planes de Viviendas / Terrenos",
       "summary": "Utilizá este medio para consultar o pagar tu plan de vivienda o cuota de terreno.",
       "icon": "fas fa-3x fa-key",
-      "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hcedupremul?Pres",
+      "url": "https://app.riocuarto.gov.ar:8443/gestiontributaria/servlet/com.recursos.hcedupremul?Pres",
       "external": true
     },
     {
@@ -45,7 +45,7 @@
       "title": "Cementerio",
       "summary": "Utilizá este medio para consultar o pagar tu impuesto de cementerio.",
       "icon": "fas fa-3x fa-dove",
-      "url": "https://app.riocuarto.gov.ar:8443/OficinaVirtual/servlet/hceduimpmul?Pant",
+      "url": "https://app.riocuarto.gov.ar:8443/gestiontributaria/servlet/com.recursos.hceduimpmul?Pant",
       "external": true
     },
     {
