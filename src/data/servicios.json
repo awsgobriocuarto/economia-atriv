@@ -21,7 +21,7 @@
       "title": "Cedulón Digital",
       "summary": "",
       "icon": "far fa-3x fa-file-alt",
-      "url": "http://cidi.riocuarto.gov.ar/?cidi=5575683555726C625A66587A6172664676544642464D58696A7A733D",
+      "url": "https://app.riocuarto.gov.ar:8443/gestiontributaria/servlet/com.recursos.suscripcioncdingreso",
       "external": true
     },
     {
