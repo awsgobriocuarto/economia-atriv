@@ -3,7 +3,7 @@ import axios from "axios";
 import Loading from "../Loading";
 
 const apiURL =
-  "https://script.google.com/macros/s/AKfycbwI68_FYAYzOLKHwbxIJSX1RH_21MBF1nrxXOpHZlNsKkqvPRHh/exec?spreadsheetId=12cokqEPO0B7WZCds_4dV0Uigoe4r-SM7iCIxJuMgeAI&sheet=banners";
+  "https://script.google.com/macros/s/AKfycbwI68_FYAYzOLKHwbxIJSX1RH_21MBF1nrxXOpHZlNsKkqvPRHh/exec?spreadsheetId=12cokqEPO0B7WZCds_4dV0Uigoe4r-SM7iCIxJuMgeAI&sheet=tests";
 
 function Banners() {
   const [banners, setBanners] = useState([]);
@@ -14,49 +14,57 @@ function Banners() {
     axios
       .get(apiURL)
       .then((res) => {
-        //console.log(res.data);
-        setLoading(false);
         setBanners(res.data);
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+
+  // console.log(banners);
+
+  if (loading) {
+    return <Loading />;
+  }
+
+  if (banners.length === 0) {
+    return "";
+  }
+
   return (
-    <>
-      {loading ? (
-        <Loading />
-      ) : (
-        <div className="slides">
-          <div
-            id="carouselBanners"
-            className="carousel slide"
-            data-ride="carousel"
-          >
-            <div className="carousel-inner">
-              {banners.map((banner, index) => (
-                <div
-                  key={index}
-                  className={
-                    index === 1 ? "carousel-item active" : "carousel-item"
-                  }
-                >
-                  <>
-                    {banner.link ? (
-                      <a
-                        href={banner.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img src={banner.imageUrl} alt="banner" />
-                      </a>
-                    ) : (
+    <div className="slides">
+      <div id="carouselBanners" className="carousel slide" data-ride="carousel">
+        <div className="carousel-inner">
+          {banners.map((banner, index) => (
+            <div
+              key={index}
+              className={
+                banner.id > 1 ? "carousel-item" : "carousel-item  active"
+              }
+            >
+              <>
+                {banner.link ? (
+                  <a
+                    href={banner.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <>
                       <img src={banner.imageUrl} alt="banner" />
-                    )}
+                    </>
+                  </a>
+                ) : (
+                  <>
+                    <img src={banner.imageUrl} alt="banner" />
                   </>
-                </div>
-              ))}
+                )}
+              </>
             </div>
+          ))}
+        </div>
+        {banners.length > 1 ? (
+          <>
             <a
               className="carousel-control-prev"
               href="#carouselBanners"
@@ -81,10 +89,12 @@ function Banners() {
               ></span>
               <span className="sr-only">Next</span>
             </a>
-          </div>
-        </div>
-      )}
-    </>
+          </>
+        ) : (
+          ""
+        )}
+      </div>
+    </div>
   );
 }
 
