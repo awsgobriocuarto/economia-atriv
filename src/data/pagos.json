@@ -60,7 +60,7 @@
       "id": 8,
       "title": "Cementerio / Panteones",
       "summary": "Utilizá este medio para consultar o pagar tu impuesto de pantenones del cementerio.",
-      "icon": "fas fa-3x fa-file-invoice",
+      "icon": "fas fa-3x fa-dove",
       "url": "https://app.riocuarto.gov.ar:8443/gestiontributaria/servlet/com.recursos.hceduimpmul?Pant",
       "external": true
     }
